@@ -805,7 +805,12 @@ export class UserRepository {
     decodedToken: any
   ): Promise<any> {
     const client: PoolClient = await getClient();
-    const refStId = decodedToken.id;
+    let refStId;
+    if (userData.refStId == "") {
+      refStId = decodedToken.id;
+    } else {
+      refStId = userData.refStId;
+    }
     const tokenData = { id: decodedToken.id, branch: decodedToken.branch };
     const token = generateToken(tokenData, true);
 

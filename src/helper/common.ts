@@ -306,7 +306,7 @@ export function mapAttendanceData(userMapData: any[]) {
       refStLName,
       date,
       time,
-      refCtMobile
+      refCtMobile,
     } = curr;
     if (!acc[refTimeId]) {
       acc[refTimeId] = { refTimeId, refTime, users: [] };
@@ -316,7 +316,13 @@ export function mapAttendanceData(userMapData: any[]) {
         (user: any) => user.refSCustId === refSCustId
       );
       if (!user) {
-        user = { refSCustId, refStFName, refStLName,refCtMobile, attendance: [] };
+        user = {
+          refSCustId,
+          refStFName,
+          refStLName,
+          refCtMobile,
+          attendance: [],
+        };
         acc[refTimeId].users.push(user);
       }
       user.attendance.push(`${date}, ${time}`);
@@ -328,81 +334,104 @@ export function mapAttendanceData(userMapData: any[]) {
   return Object.values(groupedData);
 }
 
+type AttendanceCount = {
+  reftime: string;
+  refTimeId: string | number;
+  [key: string]: any;
+};
+
 export function findNearestTimeRange(
-  attendanceCounts: AttendanceCount[],
-  currentTime: string
+  genderCount: AttendanceCount[],
+  todayDate: string
 ) {
-  const currentDate = new Date(currentTime);
+  function convertToMinutes(timeString: string): number {
+    const [hour, minute] = timeString.split(":");
+    const ampm = timeString.split(" ")[1]?.toUpperCase();
+    let hours = parseInt(hour);
 
-  // Helper function to convert startTime (e.g., "06:00 AM") to Date object for current date
-  function parseTimeToToday(timeStr: string): Date {
-    const normalizedTimeStr = timeStr.trim().toUpperCase();
-
-    // Check if timeStr is valid
-    if (!normalizedTimeStr.includes("AM") && !normalizedTimeStr.includes("PM")) {
-      console.error("Invalid time format, no AM/PM found:", timeStr);
-      return new Date(NaN); // Return invalid date
+    if (!ampm) {
+      console.error(`Invalid time format: ${timeString}`);
+      return NaN;
     }
 
-    const [time, meridian] = normalizedTimeStr.split(" ");
-    const [hours, minutes] = time.split(":").map(Number);
-    
-    if (isNaN(hours) || isNaN(minutes)) {
-      console.error("Invalid time values:", timeStr);
-      return new Date(NaN); // Return invalid date if hours or minutes are not valid numbers
-    }
-
-    let adjustedHours = hours;
-    if (meridian === "PM" && hours !== 12) {
-      adjustedHours += 12; // Convert PM hours (except for 12 PM) to 24-hour format
-    } else if (meridian === "AM" && hours === 12) {
-      adjustedHours = 0; // 12 AM is midnight
-    }
-
-    // Construct a valid ISO date string
-    const dateString = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${currentDate.getDate().toString().padStart(2, '0')}T${adjustedHours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:00`;
-    
-    // Log the constructed date string
-    console.log("Constructed Date String:", dateString);
-
-    return new Date(dateString); // Return the constructed date object
+    if (ampm === "PM" && hours !== 12) hours += 12; // Convert PM hours
+    if (ampm === "AM" && hours === 12) hours = 0; // Convert 12 AM to 0 hours
+    return hours * 60 + parseInt(minute);
   }
 
-  // Map the attendance counts and convert the start time to Date object
-  const mappedData = attendanceCounts.map((item) => {
-    const [startTime] = item.reftime.split(" to ");
-    const parsedStartTime = parseTimeToToday(startTime);
+  function parseCustomDate(dateString: string): Date | null {
+    const dateTimeRegex =
+      /^(\d{2})\/(\d{2})\/(\d{4}), (\d{2}):(\d{2}):(\d{2}) (\w{2})$/;
+    const match = dateString.match(dateTimeRegex);
 
-    // Check for invalid date
-    if (isNaN(parsedStartTime.getTime())) {
-      console.error(`Invalid startTime detected: ${startTime}`);
+    if (!match) {
+      console.error(`Invalid todayDate format: ${dateString}`);
+      return null;
     }
 
-    return { ...item, startTime: parsedStartTime };
-  });
+    const [, day, month, year, hours, minutes, seconds, period] = match;
 
-  let nearest: AttendanceCount | null = null;
-  let smallestDiff = Infinity;
+    // Convert to 24-hour time
+    let hour = parseInt(hours, 10);
+    if (period.toUpperCase() === "PM" && hour !== 12) hour += 12;
+    if (period.toUpperCase() === "AM" && hour === 12) hour = 0;
 
-  // Iterate over the mapped data and calculate the time difference
-  mappedData.forEach((item) => {
-    const timeDiff = Math.abs(item.startTime.getTime() - currentDate.getTime());
-    if (timeDiff < smallestDiff) {
-      smallestDiff = timeDiff;
-      nearest = item;
+    return new Date(
+      parseInt(year, 10),
+      parseInt(month, 10) - 1,
+      parseInt(day, 10),
+      hour,
+      parseInt(minutes, 10),
+      parseInt(seconds, 10)
+    );
+  }
+
+  const parsedDate = parseCustomDate(todayDate);
+  console.log("parsedDate line ---- 391", parsedDate);
+  if (!parsedDate) {
+    return null;
+  }
+
+  const todayHours = parsedDate.getHours();
+  const todayMinutes = parsedDate.getMinutes();
+  const todayTotalMinutes = todayHours * 60 + todayMinutes;
+  console.log("todayTotalMinutes line ---- 399", todayTotalMinutes);
+
+  let nearestTimeRange: AttendanceCount | null = null;
+  let minDifference = Infinity;
+
+  genderCount.forEach((item) => {
+    if (!item.reftime || !item.reftime.includes("to")) {
+      console.error(`Invalid reftime format: ${item.reftime}`);
+      return;
+    }
+
+    const [startTime, endTime] = item.reftime
+      .split("to")
+      .map((str) => str.trim());
+    const startMinutes = convertToMinutes(startTime);
+    console.log(" -> Line Number ----------------------------------- 414");
+    console.log("startMinutes", startMinutes);
+
+    if (isNaN(startMinutes)) {
+      console.error(`Failed to parse startTime: ${startTime}`);
+      return;
+    }
+
+    const diff = Math.abs(todayTotalMinutes - startMinutes);
+    console.log(" -> Line Number ----------------------------------- 423");
+    console.log("diff", diff);
+
+    console.log("item.reftime", item.reftime);
+
+    if (diff < minDifference) {
+      minDifference = diff;
+      nearestTimeRange = item;
+      console.log(" -> Line Number ----------------------------------- 430");
+      console.log(" -> Line Number ----------------------------------- 431");
+      console.log("selected Time", item.reftime);
     }
   });
 
-  // Prepare the clean data without the `startTime` property
-  const cleanData = mappedData.map(({ startTime, ...rest }) => rest);
-
-  // Return the clean data along with the nearest reference time ID
-  return [...cleanData, { nearestRefTimeId: nearest }];
+  return nearestTimeRange;
 }
-
-// Define the AttendanceCount type
-type AttendanceCount = {
-  reftime: string; // e.g., "06:00 AM to 07:00 AM"
-  refTimeId: string | number; // Replace with the actual type (string or number)
-  [key: string]: any; // Allow additional properties
-};

@@ -266,8 +266,8 @@ export const getUpDateList = `SELECT
     TO_CHAR(TO_TIMESTAMP(MIN(txn."transTime"), 'DD/MM/YYYY, HH12:MI:SS am'), 'HH24:MI:SS') AS "refTime",
     COUNT(CASE WHEN notif."refRead" = false THEN 1 END) AS "unreadCount",
     CASE
-        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'users'
-        WHEN txn."transTypeId" = 37 THEN 'front office'
+        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'Notification'
+        WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END AS "groupType"
 FROM
@@ -283,8 +283,8 @@ WHERE
 GROUP BY
     u."refStId", u."refSCustId", u."refStFName", u."refStLName", b."refBranchName",
     CASE
-        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'users'
-        WHEN txn."transTypeId" = 37 THEN 'front office'
+        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'Notification'
+        WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END
 ORDER BY
@@ -300,7 +300,7 @@ export const getStaffUpdateList = `SELECT
     TO_CHAR(TO_TIMESTAMP(MIN(txn."transTime"), 'DD/MM/YYYY, HH12:MI:SS am'), 'HH24:MI:SS') AS "refTime",
     COUNT(CASE WHEN notif."refRead" = false THEN 1 END) AS "unreadCount",
     CASE
-        WHEN txn."transTypeId" IN (11,12,15) THEN 'users'
+        WHEN txn."transTypeId" IN (11,12,15) THEN 'Notification'
         WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END AS "groupType"
@@ -318,7 +318,7 @@ WHERE
 GROUP BY
     u."refStId", u."refSCustId", u."refStFName", u."refStLName", b."refBranchName",
     CASE
-        WHEN txn."transTypeId" IN (11,12,15) THEN 'users'
+        WHEN txn."transTypeId" IN (11,12,15) THEN 'Notification'
         WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END

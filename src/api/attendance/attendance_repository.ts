@@ -44,32 +44,27 @@ export class AttendanceRepository {
       } else {
         todayDate = CurrentTime();
       }
-      console.log("todayDate line ---- 48 \n", todayDate);
-
       const packageList = await executeQuery(getTodayPackageList, [todayDate]);
-      console.log("packageList line ------ 51 \n", packageList);
       const refTimeIds = packageList.map((item: any) => item.refTimeId);
-      console.log("refTimeIds line ------- 53 \n", refTimeIds);
       const getUserCountResult = await executeQuery(getUserCount, [refTimeIds]);
-      console.log("getUserCountResult line -------55 \n", getUserCountResult);
       const timeRanges = getUserCountResult.map((item: any) => ({
         refTimeId: item.refTimeId,
         refTime: item.refTime,
         usercount: item.usercount,
       }));
-      console.log("timeRanges line ------- 61 \n", timeRanges);
       const attendanceCounts = await attendanceQuery(getOfflineCount, [
         todayDate,
         JSON.stringify(timeRanges),
       ]);
-      console.log("attendanceCounts line ---------- 66 \n", attendanceCounts);
 
       const genderCount = await executeQuery(getGenderCount, [
         JSON.stringify(attendanceCounts),
       ]);
 
-      console.log("genderCount line -------- 72 \n", genderCount);
-      const finalData = findNearestTimeRange(genderCount, todayDate);
+      let finalData: any[] | null = null;
+      finalData = findNearestTimeRange(genderCount, todayDate);
+      finalData = [...genderCount, { nearestRefTimeId: finalData }];
+
       const results = {
         success: true,
         message: "OverView Attendance Count is passed successfully",
@@ -387,7 +382,7 @@ export class AttendanceRepository {
             formattedAttendanceData,
             userData.refPackageId,
           ]);
-          console.log('userMapData line ------- 390', userMapData)
+          console.log("userMapData line ------- 390", userMapData);
           finalData = mapAttendanceData(userMapData);
         } catch (error) {
           console.error("Error fetching or processing data:", error);

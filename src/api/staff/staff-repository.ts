@@ -137,13 +137,15 @@ export class StaffRepository {
               ...refDashBoardData,
               getStudentChangesCountResult,
             };
-             let userType = [];
-                  const userTypeResult = await executeQuery(getUserType, [decodedToken.id]);
-                  if (userTypeResult[0].refUtId == 12) {
-                    userType = [4, 8, 10, 11];
-                  } else {
-                    userType = [4, 8, 10, 11, 12];
-                  }
+            let userType = [];
+            const userTypeResult = await executeQuery(getUserType, [
+              decodedToken.id,
+            ]);
+            if (userTypeResult[0].refUtId == 12) {
+              userType = [4, 8, 10, 11];
+            } else {
+              userType = [4, 8, 10, 11, 12];
+            }
             const getEmployeeChangesCountResult = await executeQuery(
               getEmployeeChangesCount,
               [userType]
@@ -738,6 +740,20 @@ export class StaffRepository {
               oldData = userData.olddata;
               break;
 
+            case "medicalIssue":
+              transTypeId = 12;
+              tableName = "users";
+              getUserData = rawGetUserDataQuery.replace(
+                "{{tableName}}",
+                tableName
+              );
+              newData = await executeQuery(getUserData, [id]);
+              olddata = newData[0];
+              userData = { ...userData, olddata };
+              updatedData = userData.medicalIssue;
+              oldData = userData.olddata;
+              break;
+
             case "presentHealth":
               updatedData = userData.presentHealth;
               const refPerHealthId = JSON.stringify(
@@ -904,7 +920,7 @@ export class StaffRepository {
         true
       );
     } catch (error) {
-      console.log('error', error)
+      console.log("error", error);
       await client.query("ROLLBACK");
 
       return encrypt(

@@ -11,13 +11,13 @@ export class TestingRepository {
     };
     const token = generateToken(tokenData, true);
     try {
-      const mailReselt = await generateMailLink(40);
+      // const mailReselt = await generateMailLink(40);
 
       const results = {
         success: true,
         message: "Testing Success",
         token: token,
-        mailReselt: mailReselt,
+        // mailReselt: mailReselt,
       };
       return encrypt(results, false);
     } catch (error) {

@@ -57,6 +57,7 @@ const label = {
   refPerformance: "Performance",
   refMaritalStatus: "Marital Status",
   refWeddingDate: "Wedding Date",
+  refHealthIssue: "Medical Issue",
 };
 
 export function reLabelText(key: string): string {
