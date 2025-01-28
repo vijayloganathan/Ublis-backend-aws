@@ -829,7 +829,7 @@ export class SettingsRepository {
     };
     const token = generateToken(tokenData, true);
 
-    try {
+    try {console.log(' -> Line Number ----------------------------------- 832', );
       const intoVideoData = await executeQuery(getIntoVideoData, []);
       const results = {
         success: true,

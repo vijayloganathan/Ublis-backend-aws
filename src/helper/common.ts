@@ -410,8 +410,6 @@ export function findNearestTimeRange(
       .split("to")
       .map((str) => str.trim());
     const startMinutes = convertToMinutes(startTime);
-    console.log(" -> Line Number ----------------------------------- 414");
-    console.log("startMinutes", startMinutes);
 
     if (isNaN(startMinutes)) {
       console.error(`Failed to parse startTime: ${startTime}`);
@@ -419,17 +417,12 @@ export function findNearestTimeRange(
     }
 
     const diff = Math.abs(todayTotalMinutes - startMinutes);
-    console.log(" -> Line Number ----------------------------------- 423");
-    console.log("diff", diff);
 
     console.log("item.reftime", item.reftime);
 
     if (diff < minDifference) {
       minDifference = diff;
       nearestTimeRange = item;
-      console.log(" -> Line Number ----------------------------------- 430");
-      console.log(" -> Line Number ----------------------------------- 431");
-      console.log("selected Time", item.reftime);
     }
   });
 

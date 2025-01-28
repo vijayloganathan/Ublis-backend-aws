@@ -156,6 +156,7 @@ export class AttendanceRepository {
     const token = generateToken(tokenData, true);
     try {
       let userData = await executeQuery(getUserData, [decodedToken.id]);
+      console.log('userData', userData)
       const results = {
         success: true,
         message: "Passing The User Data",

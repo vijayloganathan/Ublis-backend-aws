@@ -806,17 +806,24 @@ export class UserRepository {
   ): Promise<any> {
     const client: PoolClient = await getClient();
     let refStId;
-    if (userData.refStId == "") {
+    console.log('userData.refStId line ---------- 809', userData)
+    if (!userData.refStId) {
+      console.log('decodedToken.id -> Line Number ----------------------------------- 810', decodedToken.id);
       refStId = decodedToken.id;
     } else {
-      refStId = userData.refStId;
+      refStId = userData.r
+      console.log('refStId -> Line Number ----------------------------------- 814', refStId);
     }
+    console.log('refStId', refStId)
     const tokenData = { id: decodedToken.id, branch: decodedToken.branch };
     const token = generateToken(tokenData, true);
 
     let refUtId: string;
 
     const checkUser = await executeQuery(getUserType, [refStId]);
+    console.log(' -> Line Number ----------------------------------- 820', );
+    console.log('checkUser', checkUser)
+
     if (checkUser[0].refUtId == 5 || checkUser[0].refUtId == 6) {
       refUtId = "user";
     } else {

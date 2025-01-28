@@ -3,21 +3,24 @@ export const initialDataOfPayment = `SELECT
   u."refSCustId",
   u."refStFName",
   u."refStLName",
-  u."refSeTo",
+  up."refClTo",
   rp."refPackageName",
-  pt."refTime",
-  u."refClassMode",
+  pt."refTime" AS "weekDaysTiming",
+  pt1."refTime" AS "weekEndTiming",
+  up."refClMode",
   rp."refFeesType",
   rp."refFees",
   rp."refPaId",
   rm."refTimeMembers"
 FROM
   public.users u
-  INNER JOIN public."refPackage" rp ON CAST(u."refSessionMode" AS INTEGER) = rp."refPaId"
-  INNER JOIN public."refPaTiming" pt ON CAST(u."refTimingId" AS INTEGER) = pt."refTimeId"
-  INNER JOIN public."refMembers" rm ON CAST(u."refSessionType" AS INTEGER) = rm."refTimeMembersID"
+  LEFT JOIN public."refUserPackage" up ON CAST (up."refStId" AS INTEGER) = u."refStId"
+  LEFT JOIN public."refPackage" rp ON CAST(up."refPaId" AS INTEGER) = rp."refPaId"
+  LEFT JOIN public."refPaTiming" pt ON CAST(up."refWeekDaysTiming" AS INTEGER) = pt."refTimeId"
+  LEFT JOIN public."refPaTiming" pt1 ON CAST(up."refWeekTiming" AS INTEGER) = pt1."refTimeId"
+  LEFT JOIN public."refMembers" rm ON CAST(up."refBatchId" AS INTEGER) = rm."refTimeMembersID"
 WHERE
-  u."refStId" = 4;;
+  u."refStId" = $1;
 `;
 
 export const otherPackage = `

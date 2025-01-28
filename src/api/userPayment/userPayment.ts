@@ -39,9 +39,11 @@ export class UserPaymentRepository {
     const token = generateToken(tokenData, true);
 
     try {
-      const params = [userData.refUtId];
+      const params = [decodedToken.id];
+      console.log("params", params);
 
-      const userInitialData = await executeQuery(initialDataOfPayment);
+      const userInitialData = await executeQuery(initialDataOfPayment, params);
+      console.log("userInitialData", userInitialData);
 
       const results = {
         success: true,
@@ -322,7 +324,7 @@ export class UserPaymentRepository {
 
       const history = [
         7, //Trance Id
-         "Payment Success", // Trans Data
+        "Payment Success", // Trans Data
         userData.refStId, // trans For
         CurrentTime(), // time
         by, //updated By
@@ -354,7 +356,7 @@ export class UserPaymentRepository {
       console.error("Error:", error);
       const history = [
         8, //Trance Id
-         "Payment Failed", // Trans Data
+        "Payment Failed", // Trans Data
         userData.refStId, // trans For
         CurrentTime(), // time
         by, //updated By
