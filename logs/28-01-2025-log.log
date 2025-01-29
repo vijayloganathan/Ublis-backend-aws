@@ -1,0 +1,689 @@
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-28T03:44:00.875Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T03:45:19.218Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T03:45:25.895Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:25.901Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:25.901Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T03:45:25.914Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:25.918Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:25.919Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T03:45:26.173Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T03:45:26.180Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T03:45:33.566Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:33.576Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:33.577Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T03:45:33.594Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:33.607Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:33.608Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:47.791Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:47.793Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T03:45:47.799Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T03:45:47.802Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/director/userTypeLabel","timestamp":"2025-01-28T03:45:47.811Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/director/userTypeLabel","timestamp":"2025-01-28T03:45:47.818Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/director/staff","timestamp":"2025-01-28T03:45:48.094Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/director/staff","timestamp":"2025-01-28T03:45:48.107Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/director/userData","timestamp":"2025-01-28T03:45:50.227Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:45:50.331Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/ProfileData","timestamp":"2025-01-28T03:45:50.345Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:45:50.373Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/ProfileData","timestamp":"2025-01-28T03:45:50.508Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:41.068Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:42.096Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:42.427Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:42.750Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:42.895Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:43.133Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:43.336Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:43.508Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:43.639Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:43.803Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:47.685Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:47.926Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:48.162Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:48.363Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:48.677Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:48.900Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:49.234Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:49.755Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:50.039Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-01-28T03:46:56.159Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T03:47:04.747Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:47:05.417Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:47:05.420Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:47:08.127Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:47:08.128Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:47:08.135Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:47:08.140Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:51:35.398Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:51:38.409Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:51:44.644Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:51:47.430Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:51:48.086Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:52:01.181Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:52:01.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:53:42.564Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:53:44.269Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:53:53.170Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:53:56.383Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:54:04.344Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:54:24.911Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:54:29.112Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:55:15.432Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:55:24.030Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:55:53.541Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:55:54.477Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:21.394Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:21.394Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:21.415Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:21.416Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:23.404Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:23.409Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:23.409Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:23.412Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:41.610Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:41.612Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:41.918Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:41.919Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:42.862Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:42.863Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:42.867Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:43.181Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:45.793Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:45.793Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:46.400Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:46.401Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:47.345Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:47.345Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:48.166Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T03:56:48.172Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T03:56:48.173Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:56:48.327Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:57:38.419Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:57:39.313Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:57:49.444Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:57:59.492Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:58:31.804Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:58:32.384Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:58:34.235Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:58:34.741Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:59:20.304Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:59:20.774Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:59:44.675Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T03:59:44.979Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:00:32.258Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:00:32.986Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:01:23.298Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:01:23.359Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:01:29.273Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:01:29.401Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:27.165Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:27.166Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:29.658Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:29.659Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:03:38.142Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:38.670Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:38.670Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:40.200Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:40.201Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:03:49.572Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:50.042Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:50.043Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:51.411Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:51.412Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:52.206Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:52.206Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:03:52.216Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:03:52.216Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:03:52.223Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:03:52.228Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:03:52.455Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:03:52.457Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:03:55.493Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:03:55.494Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:27:36.407Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:27:56.891Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:27:56.892Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:27:57.426Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:27:57.856Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:27:57.857Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:28:07.687Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:08.095Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:08.096Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:10.531Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:10.532Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:11.240Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:11.241Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:13.806Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:13.807Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:28:24.961Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:25.462Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:25.464Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:28.110Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:28.111Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:28.813Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:28.814Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:28:28.835Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:28:28.836Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:28:28.843Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:28:28.844Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:28:28.848Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:28:28.852Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:31.327Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:31.327Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:49.889Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:49.891Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:53.538Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:53.538Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:54.668Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:54.669Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:28:54.680Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:28:54.681Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:28:54.686Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:28:54.692Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:28:54.692Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:28:54.696Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:28:56.821Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:28:56.822Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:15.773Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:15.773Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:20.969Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:20.970Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:21.928Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:21.928Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:29:21.939Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:29:21.940Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:29:21.945Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:29:21.950Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:29:21.950Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:29:21.955Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:23.287Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:23.288Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:29:24.411Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:29:36.780Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:29:56.973Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:56.982Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:56.984Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:29:56.988Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:29:56.988Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:29:56.996Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:29:56.997Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:29:57.003Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:29:57.003Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:29:57.006Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:30:17.994Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:30:22.573Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:30:23.170Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:30:23.171Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:30:24.981Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:30:25.017Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:30:25.018Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:30:25.132Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:32:00.082Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:32:00.090Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:32:00.091Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:32:00.892Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:32:00.893Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:32:00.898Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:33:20.839Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:33:20.841Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:33:20.847Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:33:44.453Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:33:44.457Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:33:44.466Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:33:48.887Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:33:48.888Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:33:48.894Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:33:52.364Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:33:52.365Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:33:52.378Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:33:59.789Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:33:59.791Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:33:59.796Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:35:40.881Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:35:40.888Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:35:40.889Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:35:40.895Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:35:40.896Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:35:40.903Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:36:15.892Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:36:15.894Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:36:15.901Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:36:34.258Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:36:34.259Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:36:34.269Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:36:36.956Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:36:36.958Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:36:39.093Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:36:39.093Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:36:39.731Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:36:39.731Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:36:39.739Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:36:39.740Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:36:39.746Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:36:39.753Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:36:39.754Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:36:39.758Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:36:42.604Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:36:42.604Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:36:55.274Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:37:00.761Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:37:24.849Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:37:24.850Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:37:24.859Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:37:27.753Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:37:27.754Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:37:27.763Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:37:28.779Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:37:28.780Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:37:28.785Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:37:32.553Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:37:32.554Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:37:32.559Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:37:33.697Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:37:33.697Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:37:33.704Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:37:45.996Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:37:45.996Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:38:26.680Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:38:26.680Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:38:27.413Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:38:27.414Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:38:27.421Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:38:27.422Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:38:27.426Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:38:27.433Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:38:27.434Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:38:27.440Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:38:29.619Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:38:29.620Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:38:38.393Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:38:38.395Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:38:38.402Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:38:41.950Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:38:41.951Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:38:41.956Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:38:47.527Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:38:47.529Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:38:47.534Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:38:48.509Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:38:48.509Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:38:59.408Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:39:55.004Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:39:55.005Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:39:55.747Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:39:55.748Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:39:55.757Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:39:55.758Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:39:55.764Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:39:55.769Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:39:55.771Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:39:55.775Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:39:58.049Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:39:58.050Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:40:00.054Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:40:05.079Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:40:05.080Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:40:05.091Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:40:05.092Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:40:05.106Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:40:05.107Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:40:05.114Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:40:05.114Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:40:05.126Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:40:05.143Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:40:16.771Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:40:21.496Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:40:21.497Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:40:21.506Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:40:26.131Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:40:42.576Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:40:42.578Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:42:08.191Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:42:08.191Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:42:08.943Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:42:08.944Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:42:08.957Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:42:08.963Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:42:08.964Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:42:08.972Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:42:08.972Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:42:08.977Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:42:14.711Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:42:14.712Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:42:28.636Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:42:28.637Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:42:28.646Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:42:30.071Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:42:30.072Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:42:49.652Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:45:07.405Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:45:07.406Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:45:08.135Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:45:08.136Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:08.143Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:08.143Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:08.148Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:08.154Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:08.155Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:08.160Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:45:11.035Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:45:11.036Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:45:28.409Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:42.848Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:42.852Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:42.858Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:44.428Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:44.429Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:44.434Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:47.702Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:47.704Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:47.708Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:45:56.720Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:45:56.721Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:45:56.726Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:46:01.742Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:46:01.743Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:46:01.748Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:46:03.934Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:46:03.935Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:46:05.247Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:46:05.248Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:46:05.999Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:46:05.999Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:46:06.007Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:46:06.007Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:46:06.011Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:46:06.017Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:46:06.017Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:46:06.021Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:46:07.138Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:46:07.138Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:46:15.577Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:46:15.578Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:46:15.584Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:51:20.519Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:20.530Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:20.531Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:51:20.535Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:51:20.536Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:20.542Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:20.544Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:51:20.549Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:51:20.549Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:51:20.553Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:36.988Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:36.988Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:37.315Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:37.317Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:51:38.137Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:38.142Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:38.143Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T04:51:38.294Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:51:41.550Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:42.263Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:42.264Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:42.964Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:42.965Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T04:51:52.619Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:53.040Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:53.042Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:54.629Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:54.629Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:51:55.406Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:51:55.407Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:51:55.417Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:51:55.417Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:51:55.421Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:51:55.427Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:52:00.127Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:52:00.128Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:15.427Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:15.428Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:52:16.424Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:52:16.480Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:52:16.481Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:31.843Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:31.843Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:31.850Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:34.145Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:34.145Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:34.153Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:52:34.315Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:52:34.318Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:52:34.947Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:52:34.948Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:34.957Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:34.958Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:34.962Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:34.969Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:35.001Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:35.002Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:52.245Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:52.253Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:52.254Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:53.292Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:53.294Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:53.311Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:58.618Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:58.620Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:58.625Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:52:59.561Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:52:59.566Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:52:59.566Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:52:59.635Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:52:59.636Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:09.136Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:09.137Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:09.142Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:10.099Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:10.110Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:10.110Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:23.282Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:23.282Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:23.289Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:23.857Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:23.861Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:23.936Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:33.256Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:33.519Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:33.520Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:33.526Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:36.402Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:37.344Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:37.345Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:37.351Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:44.303Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:44.304Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:44.354Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:44.354Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:53:44.360Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:53:44.360Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:53:44.599Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:53:44.601Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:53:47.074Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:53:47.074Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:53:47.832Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:53:47.832Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:47.841Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:47.842Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:47.850Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:53:47.854Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:53:47.886Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:53:47.886Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:53:51.192Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:53:51.193Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:54:08.856Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:54:38.271Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:54:38.272Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:54:38.283Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:54:39.278Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:54:39.282Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:54:39.282Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:54:50.263Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:54:50.264Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:54:50.272Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:54:51.230Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:54:51.231Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:54:51.236Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:55:04.244Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:55:04.244Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:55:04.252Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T04:55:04.772Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T04:55:04.772Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T04:55:04.778Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T04:55:11.275Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T04:55:25.313Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T04:55:25.314Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:06.101Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:06.101Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T05:00:14.842Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:00:17.860Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:00:17.861Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:00:17.870Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:00:17.873Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:00:17.911Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:00:17.912Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:00:22.515Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:00:27.108Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:27.115Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:27.115Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:27.265Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:27.266Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:27.405Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:27.405Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:27.541Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:27.541Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:33.461Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:33.461Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:00:33.471Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:00:33.471Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:00:33.475Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:00:33.508Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:33.604Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:33.604Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:00:38.879Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:00:53.507Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:00:53.507Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:00:54.549Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:00:54.549Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:01:15.553Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:01:55.746Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:01:55.747Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:01:56.980Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:01:56.980Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:01:56.991Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:01:56.991Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:01:56.996Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:01:57.007Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:01:57.200Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:01:57.200Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:02:00.072Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:02:00.072Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:11.269Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:11.269Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:11.274Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:11.988Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:11.993Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:11.993Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:25.151Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:25.154Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:25.161Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:25.561Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:25.562Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:25.567Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:30.348Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:02:36.223Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:02:36.223Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:36.234Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:36.234Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:36.238Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:02:36.273Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:02:36.392Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:02:36.393Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:02:36.423Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:02:36.424Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:02:46.166Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:03:08.322Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:03:08.324Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:03:08.330Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:03:08.866Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:03:08.867Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:03:08.872Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:03:09.420Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:03:09.420Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:03:09.435Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:03:10.432Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:03:10.432Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:03:10.436Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:04:12.267Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:04:12.267Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:04:12.273Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.113:6201/api/v1/user/profileData","timestamp":"2025-01-28T05:04:12.311Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T05:04:12.316Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T05:04:12.316Z"}
+{"level":"error","message":"Error in passing The User Profile Data Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:04:33.305Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:08:11.254Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:08:11.255Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T05:08:21.914Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:08:22.594Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:08:22.594Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T05:08:24.590Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:08:24.596Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:08:24.596Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/profile/passRegisterData","timestamp":"2025-01-28T05:08:24.763Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T05:09:05.627Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T05:09:05.628Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: connect ETIMEDOUT 65.2.63.226:5432","stack":"Error: Database query failed: connect ETIMEDOUT 65.2.63.226:5432\n    at C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:46:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T05:09:26.655Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-28T06:27:44.110Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-28T11:42:15.517Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-28T11:42:48.566Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/users/login","timestamp":"2025-01-28T11:45:15.560Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T11:45:21.561Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T11:45:21.574Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:21.585Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:21.586Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:21.595Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:21.596Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T11:45:21.791Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/staff/dashBoard","timestamp":"2025-01-28T11:45:21.798Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:45:39.406Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:39.426Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:39.429Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:45:39.455Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:39.468Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:39.469Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:45:45.433Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:45.444Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:45.445Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:45:45.457Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:45:45.467Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:45:45.468Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:48:22.981Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:48:22.994Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:48:22.994Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:48:23.011Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-01-28T11:48:23.029Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validateTokenData","timestamp":"2025-01-28T11:48:23.038Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:33.626Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:33.637Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:35.920Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:35.933Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:50:36.745Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/overView","timestamp":"2025-01-28T11:50:36.759Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/userSearch","timestamp":"2025-01-28T11:50:38.769Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/user","timestamp":"2025-01-28T11:50:40.947Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/user","timestamp":"2025-01-28T11:50:41.153Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:46.096Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/session","timestamp":"2025-01-28T11:50:46.110Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/reportOptions","timestamp":"2025-01-28T11:51:07.298Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/report","timestamp":"2025-01-28T11:51:11.346Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/reportOptions","timestamp":"2025-01-28T11:51:45.770Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/reportOptions","timestamp":"2025-01-28T11:51:48.670Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/attendance/report","timestamp":"2025-01-28T11:51:49.363Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T12:34:10.775Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T12:34:10.777Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'result')","stack":"TypeError: Cannot read properties of undefined (reading 'result')\n    at UserRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\api\\users\\user-repository.ts:400:37)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\api\\users\\user-repository.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T12:34:10.895Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-01-28T12:34:10.902Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.113:6201/api/v1/validatetoken","timestamp":"2025-01-28T12:34:10.902Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'result')","stack":"TypeError: Cannot read properties of undefined (reading 'result')\n    at UserRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\api\\users\\user-repository.ts:400:37)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\VIJAY L\\Desktop\\backend1\\src\\api\\users\\user-repository.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-01-28T12:34:10.930Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-28T13:39:31.612Z"}
