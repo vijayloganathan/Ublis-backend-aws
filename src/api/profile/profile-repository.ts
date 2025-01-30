@@ -36,6 +36,8 @@ import {
   deleteFile,
   getFileType,
 } from "../../helper/storage";
+import { sendRegistrationConfirmation } from "../../helper/mailcontent";
+import { sendEmail } from "../../helper/mail";
 import { Session } from "inspector/promises";
 
 export class ProfileRepository {
@@ -129,7 +131,7 @@ export class ProfileRepository {
     userData: any,
     decodedToken: any
   ): Promise<any> {
-    const client: PoolClient = await getClient(); // Get the database client
+    const client: PoolClient = await getClient();
     const token = { id: decodedToken.id, branch: decodedToken.branch };
     const TokenData = generateToken1(token, true);
     try {
@@ -307,8 +309,7 @@ export class ProfileRepository {
       const transTypeId = 3,
         transData = "Registered Form Data",
         refUpdatedBy = "user";
-        
-     
+
       const parasHistory = [
         transTypeId, //Trance Id
         transData, // Trans Data
@@ -326,6 +327,25 @@ export class ProfileRepository {
 
       // Commit the transaction if all queries succeeded
       await client.query("COMMIT");
+
+      const main = async () => {
+        const mailOptions = {
+          to: userData.personalData.ref_su_mailid,
+          subject: "Your application is submited With us successfully",
+          html: sendRegistrationConfirmation(
+            userData.personalData.ref_su_fname,
+            userData.personalData.ref_su_lname
+          ),
+        };
+
+        try {
+          await sendEmail(mailOptions);
+        } catch (error) {
+          console.error("Failed to send email:", error);
+        }
+      };
+
+      main().catch(console.error);
 
       const results = {
         success: true,
@@ -439,6 +459,7 @@ export class ProfileRepository {
         acc[member.refTimeMembersID] = member.refTimeMembers;
         return acc;
       }, {});
+      const browsher = await executeQuery(fetchBrowsher, [branchId]);
 
       const tokenData = {
         id: refStId,
@@ -452,6 +473,7 @@ export class ProfileRepository {
           message: "Section Member List",
           token: token,
           data: formattedMemberList,
+          browsher: browsher,
         },
         true
       );
@@ -463,6 +485,7 @@ export class ProfileRepository {
   public async sectionTimeV1(userData: any): Promise<any> {
     try {
       const refStId = userData.refStId;
+
       const sectionId = userData.sectionId;
       const branchId = userData.branch;
       const classType = userData.classType === 1 ? "Online" : "Offline";
@@ -471,29 +494,14 @@ export class ProfileRepository {
         branchId,
         sectionId,
       ]);
+      console.log(" -> Line Number ----------------------------------- 479");
+      console.log("sectionTimeList", sectionTimeList);
       const formattedCustTime = sectionTimeList.reduce((acc, member) => {
         acc[member.refPaId] = member.refPackageName;
         return acc;
       }, {});
-      // const custTime = await executeQuery(getCustTime, [userData.branch]);
-
-      // const formattedSectionTime = sectionTimeList.reduce((acc, member) => {
-      //   acc[member.order] = {
-      //     formattedString:
-      //       member.refTime +
-      //       "  |  " +
-      //       member.refTimeMode +
-      //       "  |  " +
-      //       member.refTimeDays,
-      //     refTimeId: member.refTimeId,
-      //   };
-      //   return acc;
-      // }, {});
-
-      // const formattedCustTime = custTime.reduce((acc, member) => {
-      //   acc[member.refCustTimeId] = member.refCustTimeData;
-      //   return acc;
-      // }, {});
+      console.log(" -> Line Number ----------------------------------- 478");
+      console.log("formattedCustTime", formattedCustTime);
 
       const tokenData = {
         id: refStId,
@@ -506,8 +514,6 @@ export class ProfileRepository {
           success: true,
           message: "Section Package Data",
           token: token,
-          // SectionTime: formattedSectionTime,
-          // CustTime: formattedCustTime,
           SectionTime: formattedCustTime,
         },
         true
@@ -670,7 +676,7 @@ export class ProfileRepository {
         userData.refStId,
         CurrentTime(),
         refUpdatedBy,
-        decodedToken.id //completed
+        decodedToken.id, //completed
       ];
       await client.query(updateHistoryQuery, parasHistory);
 

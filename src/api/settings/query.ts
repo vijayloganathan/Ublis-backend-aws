@@ -320,16 +320,33 @@ FROM
   INNER JOIN public."refVideoLang" vla ON CAST(vl."refVdLangId" AS INTEGER) = vla."refVdLaId"`;
 
 export const getBrowsherData = `SELECT
-  *
+  rb."refBroId",rb."refBranchId",rb."refBroLink",rb."refBroTypeId",b."refBranchName",bt."refBrowsherTypeName"
 FROM
   public.refbrowsher rb
-  INNER JOIN public.branch b ON CAST(rb."refBranchId" AS INTEGER) = b."refbranchId"`;
+  INNER JOIN public.branch b ON CAST(rb."refBranchId" AS INTEGER) = b."refbranchId"
+  INNER JOIN public."refBrowsherType" bt ON CAST (rb."refBroTypeId" AS INTEGER) = bt."refBroTypeId"`;
 
-export const getBranch = `SELECT b.* 
+export const getBranch = `SELECT b.*
 FROM public.branch b
-LEFT JOIN public.refbrowsher rb 
-ON CAST(rb."refBranchId" AS INTEGER) = b."refbranchId"
-WHERE rb."refBranchId" IS NULL;`;
+WHERE EXISTS (
+    SELECT 1 
+    FROM public."refBrowsherType" bt
+    WHERE NOT EXISTS (
+        SELECT 1 
+        FROM public.refbrowsher rb
+        WHERE rb."refBranchId" = b."refbranchId"
+        AND rb."refBroTypeId" = bt."refBroTypeId"
+    )
+);`;
+
+export const getBrowsherType = `SELECT
+  bt.*
+FROM
+  public."refBrowsherType" bt
+  LEFT JOIN public.refbrowsher rb ON bt."refBroTypeId" = CAST(rb."refBroTypeId" AS INTEGER)
+  AND rb."refBranchId" = $1
+WHERE
+  rb."refBroTypeId" IS NULL AND (bt."refIfDelete" is null OR bt."refIfDelete" is False)`;
 
 export const browsherUpdated = `update
   public."refbrowsher"
@@ -337,12 +354,26 @@ set
   "refBroLink" = $2,
   "refBranchId" = $3
 where
-  "refBroId" = $1;`;
+  "refBroId" = $1 AND "refBroTypeId" = $4;`;
 
 export const browsherAdd = `insert into
   public."refbrowsher" (
     "refBranchId",
-    "refBroLink"
+    "refBroLink",
+    "refBroTypeId"
   )
 values
-  ($1, $2);`;
+  ($1, $2,$3);`;
+
+export const getBrowserType = `SELECT * FROM public."refBrowsherType" WHERE "refIfDelete" is null OR "refIfDelete" is False`;
+
+export const addCategory =
+  'INSERT INTO public."refBrowsherType" ("refBrowsherTypeName") VALUES ($1)';
+
+export const updateCategory = `UPDATE public."refBrowsherType"
+SET "refBrowsherTypeName" = $2
+WHERE "refBroTypeId" = $1;`;
+
+export const deleteCategory = `UPDATE public."refBrowsherType"
+SET "refIfDelete" = true
+WHERE "refBroTypeId" = $1;`;

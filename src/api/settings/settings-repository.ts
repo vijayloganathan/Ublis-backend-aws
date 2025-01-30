@@ -37,6 +37,11 @@ import {
   browsherUpdated,
   browsherAdd,
   getBrowsherData,
+  getBrowsherType,
+  getBrowserType,
+  addCategory,
+  updateCategory,
+  deleteCategory,
 } from "./query";
 
 import { timeFormat } from "../../helper/common";
@@ -525,6 +530,7 @@ export class SettingsRepository {
 
     try {
       const refTime = userData.fromTime + " to " + userData.fromTo;
+      console.log("refTime", refTime);
       const packageTimeResult = await executeQuery(addPackageTimeQuery, [
         refTime,
       ]);
@@ -536,6 +542,7 @@ export class SettingsRepository {
       };
       return encrypt(results, true);
     } catch (error) {
+      console.log("error", error);
       const results = {
         success: false,
         message: "Error in Adding the Package Timing ",
@@ -829,7 +836,8 @@ export class SettingsRepository {
     };
     const token = generateToken(tokenData, true);
 
-    try {console.log(' -> Line Number ----------------------------------- 832', );
+    try {
+      console.log(" -> Line Number ----------------------------------- 832");
       const intoVideoData = await executeQuery(getIntoVideoData, []);
       const results = {
         success: true,
@@ -904,7 +912,38 @@ export class SettingsRepository {
       return encrypt(results, true);
     }
   }
+  public async getBrowsherTypeV1(
+    userData: any,
+    decodedToken: any
+  ): Promise<any> {
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+    try {
+      console.log(" -> Line Number ----------------------------------- 919");
+      console.log("userData.branchId", userData.branchId);
+      const browsherType = await executeQuery(getBrowsherType, [
+        userData.branchId,
+      ]);
 
+      const results = {
+        success: true,
+        message: "browsher Type Data is Passed Successfully",
+        token: token,
+        browsherType: browsherType,
+      };
+      return encrypt(results, true);
+    } catch (error) {
+      const results = {
+        success: false,
+        message: "Error in Passing The Browsher Type Data",
+        token: token,
+      };
+      return encrypt(results, true);
+    }
+  }
   public async generateUploadLinkV1(
     userData: any,
     decodedToken: any
@@ -945,7 +984,6 @@ export class SettingsRepository {
       return encrypt(results, true);
     }
   }
-
   public async UploadLinkV1(userData: any, decodedToken: any): Promise<any> {
     const refStId = decodedToken.id;
 
@@ -962,11 +1000,10 @@ export class SettingsRepository {
           userData.refBroId,
           userData.refBroLink,
           userData.refBranchId,
+          userData.refBroTypeId,
         ]);
 
-        console.log("line ------------ 967");
         if (userData.oldlink) {
-          console.log(" line ------------ 970");
           try {
             const bucketName = "ublis-yoga-buckets";
             const keyName = userData.oldlink.split(".com/")[1];
@@ -990,10 +1027,10 @@ export class SettingsRepository {
           console.log("No old link provided. Skipping deletion.");
         }
       } else {
-        console.log("line ------------ 994");
         const addBrowsher = await executeQuery(browsherAdd, [
           userData.refBranchId,
           userData.refBroLink,
+          userData.refBroTypeId,
         ]);
 
         console.log("line ------- 1000");
@@ -1013,6 +1050,144 @@ export class SettingsRepository {
       const results = {
         success: false,
         message: "Failed to upload the Browsher Image",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the error response
+    }
+  }
+
+  // Browsher Category Type
+  public async getCategoryV1(userData: any, decodedToken: any): Promise<any> {
+    const refStId = decodedToken.id;
+
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+
+    try {
+      const browserType = await executeQuery(getBrowserType, []);
+      const results = {
+        success: true,
+        message: "Browsher Category Type Passed Successfully",
+        token,
+        browserType: browserType,
+      };
+
+      return encrypt(results, true); // Encrypt and return the response
+    } catch (error) {
+      // Return error response if something goes wrong
+      const results = {
+        success: false,
+        message: "Failed in passing the Catageory type",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the error response
+    }
+  }
+  public async addCategoryV1(userData: any, decodedToken: any): Promise<any> {
+    const refStId = decodedToken.id;
+
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+
+    try {
+      const browserType = await executeQuery(addCategory, [
+        userData.refCatageoryName,
+      ]);
+      const results = {
+        success: true,
+        message: "new Category Type Added Successfully",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the response
+    } catch (error) {
+      console.log("error", error);
+
+      // Return error response if something goes wrong
+      const results = {
+        success: false,
+        message: "Error IN Adding the New Category Type",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the error response
+    }
+  }
+  public async updateCategoryV1(
+    userData: any,
+    decodedToken: any
+  ): Promise<any> {
+    const refStId = decodedToken.id;
+
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+
+    try {
+      const params = [userData.refCatId, userData.refCatageoryName];
+      console.log(" -> Line Number ----------------------------------- 1138");
+      console.log("params", params);
+      const browserType = await executeQuery(updateCategory, params);
+      const results = {
+        success: true,
+        message: "Category Type Update Successfully",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the response
+    } catch (error) {
+      console.log("error", error);
+
+      // Return error response if something goes wrong
+      const results = {
+        success: false,
+        message: "Error in updating the category type",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the error response
+    }
+  }
+  public async deleteCategoryV1(
+    userData: any,
+    decodedToken: any
+  ): Promise<any> {
+    const refStId = decodedToken.id;
+
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+
+    try {
+      const browserType = await executeQuery(deleteCategory, [
+        userData.refCatId,
+      ]);
+      const results = {
+        success: true,
+        message: "Category Type deleted Successfully",
+        token,
+      };
+
+      return encrypt(results, true); // Encrypt and return the response
+    } catch (error) {
+      console.log("error", error);
+
+      // Return error response if something goes wrong
+      const results = {
+        success: false,
+        message: "Error in deleting the category type",
         token,
       };
 

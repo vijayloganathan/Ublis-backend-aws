@@ -19,6 +19,7 @@ import {
   AttendanceController,
   UserPaymentController,
   TestingController,
+  GoogleWorkSpaceController,
 } from "./controller";
 import { Logger } from "winston";
 import { decodeToken, validateToken } from "../helper/token";
@@ -1015,6 +1016,16 @@ export class Settings implements IRoute {
           },
         },
         {
+          method: "POST",
+          path: "/api/v1/settings/browsher/getBrowsherType",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: settingsPage.getBrowsherType,
+            description: "Get the browsher Type",
+            auth: false,
+          },
+        },
+        {
           method: "GET",
           path: "/api/v1/settings/browsher/getBranch",
           config: {
@@ -1041,6 +1052,46 @@ export class Settings implements IRoute {
             pre: [{ method: validateToken, assign: "token" }],
             handler: settingsPage.UploadLink,
             description: "Upload Browsher Link",
+            auth: false,
+          },
+        },
+        {
+          method: "GET",
+          path: "/api/v1/settings/browsher/getCategory",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: settingsPage.getCategory,
+            description: "Get Browsher Category Type",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/settings/browsher/addCategory",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: settingsPage.addCategory,
+            description: "add new Browsher Category Type",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/settings/browsher/deleteCategory",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: settingsPage.deleteCategory,
+            description: "delete Browsher Category Type",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/settings/browsher/updateCategory",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: settingsPage.updateCategory,
+            description: "update Browsher Category Type",
             auth: false,
           },
         },
@@ -1387,6 +1438,26 @@ export class trailVideo implements IRoute {
             pre: [{ method: validateToken, assign: "token" }],
             handler: TrailVideo.shareLink,
             description: "Generate and share trail video link",
+            auth: false,
+          },
+        },
+      ]);
+      resolve(true);
+    });
+  }
+}
+export class GoogleWorkSpace implements IRoute {
+  public async register(server: any): Promise<any> {
+    return new Promise((resolve) => {
+      const GoogleWorkSpace = new GoogleWorkSpaceController();
+      server.route([
+        {
+          method: "GET",
+          path: "/api/v1/googleWorkSpace/test",
+          config: {
+            // pre: [{ method: validateToken, assign: "token" }],
+            handler: GoogleWorkSpace.testing,
+            description: "For testing",
             auth: false,
           },
         },

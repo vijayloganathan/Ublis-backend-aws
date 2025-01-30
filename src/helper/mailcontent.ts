@@ -475,3 +475,47 @@ export function welcomeVideoMail(
 
   return mail;
 }
+
+export function sendRegistrationConfirmation(
+  firstName: string,
+  lastName: string
+) {
+  const name = `${firstName} ${lastName}`;
+  const mail = `<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Successful</title>
+        <style>
+          body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+          .container { max-width: 600px; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); position: relative; overflow: hidden; }
+          .header { background-color: #4CAF50; padding: 15px; text-align: center; border-radius: 8px 8px 0 0; color: #ffffff; position: relative; }
+          .header h1 { margin: 0; font-size: 24px; }
+          .content { padding: 20px; text-align: center; }
+          .content p { font-size: 16px; line-height: 1.6; }
+          .name { font-size: 20px; font-weight: bold; color: #388E3C; }
+          .success-message { margin-top: 20px; font-size: 18px; color: #555; font-weight: bold; }
+          .checkmark { margin: 20px auto; width: 80px; height: 80px; background: url('https://example.com/checkmark.png') no-repeat center; background-size: cover; }
+          .footer { text-align: center; padding: 10px; font-size: 14px; color: #666; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Registration Successful!</h1>
+          </div>
+          <div class="content">
+            <p class="name">Dear ${name},</p>
+            <p>Thank you for registering with us! Your registration has been successfully submitted.</p>
+            <p class="success-message">Our team will contact you as soon as possible.</p>
+            <div class="checkmark"></div>
+            <p>We appreciate your interest and look forward to connecting with you.</p>
+            <p>Best regards,<br>Ublis Yogo Team</p>
+          </div>
+          <div class="footer">&copy; 2024 Ublis Yogo. All rights reserved.</div>
+        </div>
+      </body>
+      </html>`;
+  return mail;
+}

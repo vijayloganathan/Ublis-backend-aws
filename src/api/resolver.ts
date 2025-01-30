@@ -13,6 +13,7 @@ import { ForgotPasswordRepository } from "./forgotpassword/forgot_password";
 import { AttendanceRepository } from "./attendance/attendance_repository";
 import { UserPaymentRepository } from "./userPayment/userPayment";
 import { TrailVideoRepository } from "./trailVideo/trailvideo_repository";
+import { GoogleWorkSpaceRepository } from "./googleWorkSpace/googleWorkspace-repository";
 
 export class Resolver {
   public userRepository: any;
@@ -654,6 +655,15 @@ export class SettingsResolver {
       token_data
     );
   }
+  public async getBrowsherTypeV1(
+    user_data: any,
+    token_data: any
+  ): Promise<any> {
+    return await this.SettingsRepository.getBrowsherTypeV1(
+      user_data,
+      token_data
+    );
+  }
   public async generateUploadLinkV1(
     user_data: any,
     token_data: any
@@ -665,6 +675,24 @@ export class SettingsResolver {
   }
   public async UploadLinkV1(user_data: any, token_data: any): Promise<any> {
     return await this.SettingsRepository.UploadLinkV1(user_data, token_data);
+  }
+  public async getCategoryV1(user_data: any, token_data: any): Promise<any> {
+    return await this.SettingsRepository.getCategoryV1(user_data, token_data);
+  }
+  public async addCategoryV1(user_data: any, token_data: any): Promise<any> {
+    return await this.SettingsRepository.addCategoryV1(user_data, token_data);
+  }
+  public async updateCategoryV1(user_data: any, token_data: any): Promise<any> {
+    return await this.SettingsRepository.updateCategoryV1(
+      user_data,
+      token_data
+    );
+  }
+  public async deleteCategoryV1(user_data: any, token_data: any): Promise<any> {
+    return await this.SettingsRepository.deleteCategoryV1(
+      user_data,
+      token_data
+    );
   }
 }
 export class FutureClientsResolver {
@@ -873,6 +901,18 @@ export class UserPaymentResolver {
   }
 }
 
+export class GoogleWorkSpaceResolver {
+  public GoogleWorkSpaceRepository: any;
+  constructor() {
+    this.GoogleWorkSpaceRepository = new GoogleWorkSpaceRepository();
+  }
+  public async TestingV1(user_data: any, token_data: any): Promise<any> {
+    return await this.GoogleWorkSpaceRepository.TestingV1(
+      user_data,
+      token_data
+    );
+  }
+}
 export class TestingResolver {
   public TestingRepository: any;
   constructor() {

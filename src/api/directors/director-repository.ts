@@ -20,7 +20,8 @@ import {
   getUserStatusLabel,
   getDataForUserManagement,
   getUserTransaction,
-  getUserTypeLabel,
+  getUserTypeLabelDirector,
+  getUserTypeLabelAdmin,
   insertUserQuery,
   insertUserDomainQuery,
   insertUserCommunicationQuery,
@@ -303,7 +304,13 @@ export class DirectorRepository {
     };
     const token = generateToken(tokenData, true);
     try {
-      const label = await executeQuery(getUserTypeLabel, []);
+      const users = await executeQuery(getUserType, [decodedToken.id]);
+      let label;
+      if (users[0].refUtId == 7) {
+        label = await executeQuery(getUserTypeLabelDirector, []);
+      } else {
+        label = await executeQuery(getUserTypeLabelAdmin, []);
+      }
       const branch = await executeQuery(fetchBranchList, []);
 
       return encrypt(
@@ -1260,7 +1267,7 @@ export class DirectorRepository {
       const month = String(date.getMonth() + 1).padStart(2, "0");
       const year = date.getFullYear();
 
-      return `${month}-${day}-${year}`;
+      return `${day}-${month}-${year}`;
     }
     try {
       userData.refOfferId = userData.refOfferId || 1;

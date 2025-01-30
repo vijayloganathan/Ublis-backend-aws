@@ -140,7 +140,8 @@ WHERE
 ORDER BY
   txn."transTime" DESC`;
 
-export const getUserTypeLabel = `SELECT * FROM public."refUserType" WHERE "refUtId" IN (12,4,7,8,10,11)`;
+export const getUserTypeLabelDirector = `SELECT * FROM public."refUserType" WHERE "refUtId" IN (12,4,7,8,10,11)`;
+export const getUserTypeLabelAdmin = `SELECT * FROM public."refUserType" WHERE "refUtId" IN (4,8,10,11)`;
 
 // export const getCustomerCount = `SELECT COUNT(*)
 // FROM public.users

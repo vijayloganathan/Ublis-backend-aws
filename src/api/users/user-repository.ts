@@ -434,19 +434,12 @@ export class UserRepository {
       const refStId = decodedToken.id;
 
       const id = [refStId];
-      console.log("id line -------- 414 \n", id);
       const user = await executeQuery(selectUserData, id);
-      console.log("user line ------ 416 \n", user);
       let profileFile;
       if (user[0].refProfilePath) {
-        console.log("line ----- 420");
         const profileFilePath = user[0].refProfilePath;
-        console.log("profileFilePath line ----- 422", profileFilePath);
         try {
-          console.log("line ---- 425");
           const fileBuffer = await viewFile(profileFilePath);
-
-          console.log("line ----- 426");
           const fileBase64 = fileBuffer.toString("base64");
           profileFile = {
             filename: path.basename(profileFilePath),
@@ -806,23 +799,29 @@ export class UserRepository {
   ): Promise<any> {
     const client: PoolClient = await getClient();
     let refStId;
-    console.log('userData.refStId line ---------- 809', userData)
+    console.log("userData.refStId line ---------- 809", userData);
     if (!userData.refStId) {
-      console.log('decodedToken.id -> Line Number ----------------------------------- 810', decodedToken.id);
+      console.log(
+        "decodedToken.id -> Line Number ----------------------------------- 810",
+        decodedToken.id
+      );
       refStId = decodedToken.id;
     } else {
-      refStId = userData.r
-      console.log('refStId -> Line Number ----------------------------------- 814', refStId);
+      refStId = userData.r;
+      console.log(
+        "refStId -> Line Number ----------------------------------- 814",
+        refStId
+      );
     }
-    console.log('refStId', refStId)
+    console.log("refStId", refStId);
     const tokenData = { id: decodedToken.id, branch: decodedToken.branch };
     const token = generateToken(tokenData, true);
 
     let refUtId: string;
 
     const checkUser = await executeQuery(getUserType, [refStId]);
-    console.log(' -> Line Number ----------------------------------- 820', );
-    console.log('checkUser', checkUser)
+    console.log(" -> Line Number ----------------------------------- 820");
+    console.log("checkUser", checkUser);
 
     if (checkUser[0].refUtId == 5 || checkUser[0].refUtId == 6) {
       refUtId = "user";
@@ -961,6 +960,10 @@ export class UserRepository {
 
             case "presentHealth":
               updatedData = userData.presentHealth;
+              console.log(
+                " -> Line Number ----------------------------------- 957"
+              );
+              console.log("updatedData", updatedData);
               const refPerHealthId = JSON.stringify(
                 updatedData.refPresentHealth
               );

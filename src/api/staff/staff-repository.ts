@@ -707,6 +707,10 @@ export class StaffRepository {
                 userData.personalData.refStDOB
               );
 
+              console.log(
+                "userData.personalData.refWeddingDate",
+                userData.personalData.refWeddingDate
+              );
               if (userData.personalData.refWeddingDate == "") {
                 userData.personalData.refWeddingDate = "null";
               } else {
@@ -714,9 +718,21 @@ export class StaffRepository {
                   userData.personalData.refWeddingDate
                 );
               }
-              if (olddata.refWeddingDate == "null") {
+
+              console.log("olddata.refWeddingDate", olddata.refWeddingDate);
+
+              if (
+                olddata.refWeddingDate == null ||
+                olddata.refWeddingDate == ""
+              ) {
+                console.log(
+                  " -> Line Number ----------------------------------- 718"
+                );
                 olddata.refWeddingDate = "null";
               } else {
+                console.log(
+                  " -> Line Number ----------------------------------- 721"
+                );
                 olddata.refWeddingDate = formatDate(olddata.refWeddingDate);
               }
 

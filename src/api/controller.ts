@@ -16,6 +16,7 @@ import {
   AttendanceResolver,
   UserPaymentResolver,
   TrailVideoResolver,
+  GoogleWorkSpaceResolver,
 } from "./resolver";
 import logger from "../helper/logger";
 import { decodeToken } from "../helper/token";
@@ -3096,6 +3097,39 @@ export class SettingsController {
         .code(500);
     }
   };
+  public getBrowsherType = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.getBrowsherTypeV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in getting the Browsher Type", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
   public getBranchToAdd = async (
     request: any,
     response: Hapi.ResponseToolkit
@@ -3184,6 +3218,138 @@ export class SettingsController {
       return response.response(entity).code(200);
     } catch (error) {
       logger.error("error in  Upload Link", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+  public getCategory = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.getCategoryV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in  getting The Browser Type", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+  public addCategory = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.addCategoryV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in  getting The Browser Type", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+  public updateCategory = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.updateCategoryV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in  Updating the catregory Type", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+  public deleteCategory = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.deleteCategoryV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in  deleting the catregory Type", error);
       return response
         .response({
           success: false,
@@ -4150,6 +4316,47 @@ export class UserPaymentController {
   };
 }
 
+export class GoogleWorkSpaceController {
+  public resolver: any;
+
+  constructor() {
+    this.resolver = new GoogleWorkSpaceResolver();
+  }
+
+  public testing = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
+    // const decodedToken = {
+    //   id: request.plugins.token.id,
+    //   branch: request.plugins.token.branch,
+    // };
+    const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.TestingV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in Testing Controller", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+}
 export class TestingController {
   public resolver: any;
 
