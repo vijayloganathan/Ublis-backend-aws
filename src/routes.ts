@@ -16,7 +16,7 @@ import {
   Attendance,
   UserPayment,
   trailVideo,
-  GoogleWorkSpace,
+  // GoogleWorkSpace,
 } from "./api/routes";
 // import StaffRoutes from "./api/staff/routes";
 
@@ -37,7 +37,7 @@ export default class Router {
     await new Attendance().register(server);
     await new trailVideo().register(server);
     await new UserPayment().register(server);
-    await new GoogleWorkSpace().register(server);
+    // await new GoogleWorkSpace().register(server);
     await new Testing().register(server);
   }
 }

@@ -597,3 +597,5 @@
 {"level":"info","message":"GET URL REQ => http://192.168.29.35:6201/api/v1/settings/browsher/getCategory","timestamp":"2025-01-30T20:23:13.933Z"}
 {"level":"info","message":"GET URL REQ => http://192.168.29.35:6201/api/v1/settings/browsher/getData","timestamp":"2025-01-30T20:23:13.944Z"}
 {"level":"info","message":"GET URL REQ => http://192.168.29.35:6201/api/v1/settings/browsher/getCategory","timestamp":"2025-01-30T20:23:13.951Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-31T02:55:58.004Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-01-31T02:56:11.878Z"}

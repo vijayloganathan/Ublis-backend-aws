@@ -19,7 +19,7 @@ import {
   AttendanceController,
   UserPaymentController,
   TestingController,
-  GoogleWorkSpaceController,
+  // GoogleWorkSpaceController,
 } from "./controller";
 import { Logger } from "winston";
 import { decodeToken, validateToken } from "../helper/token";
@@ -1446,26 +1446,26 @@ export class trailVideo implements IRoute {
     });
   }
 }
-export class GoogleWorkSpace implements IRoute {
-  public async register(server: any): Promise<any> {
-    return new Promise((resolve) => {
-      const GoogleWorkSpace = new GoogleWorkSpaceController();
-      server.route([
-        {
-          method: "GET",
-          path: "/api/v1/googleWorkSpace/test",
-          config: {
-            // pre: [{ method: validateToken, assign: "token" }],
-            handler: GoogleWorkSpace.testing,
-            description: "For testing",
-            auth: false,
-          },
-        },
-      ]);
-      resolve(true);
-    });
-  }
-}
+// export class GoogleWorkSpace implements IRoute {
+//   public async register(server: any): Promise<any> {
+//     return new Promise((resolve) => {
+//       const GoogleWorkSpace = new GoogleWorkSpaceController();
+//       server.route([
+//         {
+//           method: "GET",
+//           path: "/api/v1/googleWorkSpace/test",
+//           config: {
+//             // pre: [{ method: validateToken, assign: "token" }],
+//             handler: GoogleWorkSpace.testing,
+//             description: "For testing",
+//             auth: false,
+//           },
+//         },
+//       ]);
+//       resolve(true);
+//     });
+//   }
+// }
 export class Testing implements IRoute {
   public async register(server: any): Promise<any> {
     return new Promise((resolve) => {
