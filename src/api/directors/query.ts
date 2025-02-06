@@ -42,6 +42,7 @@ SELECT DISTINCT
   up."refClFrom",
   up."refClTo",
   up."refTherapy",
+  up."refThreapyCount",
   uc."refUcId",
   uc."refCtId",
   uc."refCtValue",
@@ -231,16 +232,17 @@ ORDER BY "refSCustId";`;
 export const updateUserType = `
 WITH update_users AS (
   UPDATE public."users"
-  SET 
-    "refUtId" = $2
+  SET "refUtId" = $2
   WHERE "refStId" = $1
-  RETURNING *
+  RETURNING "refStId"
 )
 UPDATE public."refUserPackage"
 SET 
-  "refTherapy" = $3
-WHERE "refStId" = $1
+  "refTherapy" = $3,
+  "refThreapyCount" = $4
+WHERE "refStId" IN (SELECT "refStId" FROM update_users)
 RETURNING *;
+
 `;
 
 export const updateUserProfile = `UPDATE public."users" SET "refProfilePath"=$1 WHERE "refStId"=$2

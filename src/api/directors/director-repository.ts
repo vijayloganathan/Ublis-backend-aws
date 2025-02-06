@@ -211,6 +211,7 @@ export class DirectorRepository {
     userData: any,
     decodedToken: any
   ): Promise<any> {
+    console.log(' -> Line Number ----------------------------------- 214', );
     const refStId = decodedToken.id;
     const tokenData = {
       id: decodedToken.id,
@@ -218,8 +219,7 @@ export class DirectorRepository {
     };
     const token = generateToken(tokenData, true);
     try {
-      const studentId = [userData.refStId, 6, userData.isTherapy];
-      console.log("studentId line -------- 204", studentId);
+      const studentId = [userData.refStId, 6, userData.isTherapy, userData.threapyCount];
       const updateUserTypeResult = await executeQuery(
         updateUserType,
         studentId

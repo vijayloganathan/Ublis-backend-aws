@@ -97,7 +97,7 @@ export class StaffRepository {
             const fessCount = await executeQuery(getFeesDetails, []);
             refDashBoardData = { ...refDashBoardData, fessCount };
             let trailSampleData = await executeQuery(getRecentFormData, [
-              3,
+              2,
               CurrentTime(),
             ]);
             // trailSampleData.push({ label: "Trail Data" });
@@ -707,10 +707,6 @@ export class StaffRepository {
                 userData.personalData.refStDOB
               );
 
-              console.log(
-                "userData.personalData.refWeddingDate",
-                userData.personalData.refWeddingDate
-              );
               if (userData.personalData.refWeddingDate == "") {
                 userData.personalData.refWeddingDate = "null";
               } else {
@@ -719,20 +715,12 @@ export class StaffRepository {
                 );
               }
 
-              console.log("olddata.refWeddingDate", olddata.refWeddingDate);
-
               if (
                 olddata.refWeddingDate == null ||
                 olddata.refWeddingDate == ""
               ) {
-                console.log(
-                  " -> Line Number ----------------------------------- 718"
-                );
                 olddata.refWeddingDate = "null";
               } else {
-                console.log(
-                  " -> Line Number ----------------------------------- 721"
-                );
                 olddata.refWeddingDate = formatDate(olddata.refWeddingDate);
               }
 
