@@ -13,6 +13,7 @@ import { ForgotPasswordRepository } from "./forgotpassword/forgot_password";
 import { AttendanceRepository } from "./attendance/attendance_repository";
 import { UserPaymentRepository } from "./userPayment/userPayment";
 import { TrailVideoRepository } from "./trailVideo/trailvideo_repository";
+import { ClassInfoRepository } from "./classInfo/classInfo-repository";
 // import { GoogleWorkSpaceRepository } from "./googleWorkSpace/googleWorkspace-repository";
 
 export class Resolver {
@@ -111,13 +112,12 @@ export class ProfileResolver {
     );
   }
   public async userRegisterPageDataV1(
-    userData: any,
-    domainCode: any,
-    decodedToken: any
+    user_data: any,
+    token_data: any
   ): Promise<any> {
     return await this.profileRepository.userRegisterPageDataV1(
-      userData,
-      domainCode
+      user_data,
+      token_data
     );
   }
   public async userMemberListV1(userData: any, domainCode: any): Promise<any> {
@@ -149,6 +149,9 @@ export class ProfileResolver {
   }
   public async sessionUpdateV1(userData: any, domainCode: any): Promise<any> {
     return await this.profileRepository.sessionUpdateV1(userData, domainCode);
+  }
+  public async ThreapyUpdateV1(userData: any, domainCode: any): Promise<any> {
+    return await this.profileRepository.ThreapyUpdateV1(userData, domainCode);
   }
 }
 
@@ -913,6 +916,42 @@ export class UserPaymentResolver {
 //     );
 //   }
 // }
+export class ClassInfoResolver {
+  public ClassInfoRepository: any;
+  constructor() {
+    this.ClassInfoRepository = new ClassInfoRepository();
+  }
+  public async overViewV1(user_data: any, token_data: any): Promise<any> {
+    return await this.ClassInfoRepository.overViewV1(user_data, token_data);
+  }
+  public async currentStudentDataV1(
+    user_data: any,
+    token_data: any
+  ): Promise<any> {
+    return await this.ClassInfoRepository.currentStudentDataV1(
+      user_data,
+      token_data
+    );
+  }
+  public async addUserTherapyCountV1(
+    user_data: any,
+    token_data: any
+  ): Promise<any> {
+    return await this.ClassInfoRepository.addUserTherapyCountV1(
+      user_data,
+      token_data
+    );
+  }
+  public async studentMonthWiseReportV1(
+    user_data: any,
+    token_data: any
+  ): Promise<any> {
+    return await this.ClassInfoRepository.studentMonthWiseReportV1(
+      user_data,
+      token_data
+    );
+  }
+}
 export class TestingResolver {
   public TestingRepository: any;
   constructor() {

@@ -15,6 +15,7 @@ import {
   getFollowUpLabel,
   getDataForUserManagement,
   getSignUpCount,
+  getSignUpData,
   getRegisterCount,
   getUserStatusLabel,
   getStaffRestriction,
@@ -22,6 +23,8 @@ import {
   getUserCount,
   getStaffCount,
   getRecentFormData,
+  registerData,
+  getPaymentBendingData,
   fetchClientData1,
   userTempData,
   updateNotification,
@@ -65,7 +68,7 @@ export class StaffRepository {
 
       for (let i = 0; i < staffRestriction.length; i++) {
         const userTypeName = staffRestriction[i].columnName;
-
+        
         switch (userTypeName) {
           case "Users":
             const userTypeCount = await executeQuery(getUserCount, []);
@@ -77,9 +80,10 @@ export class StaffRepository {
               CurrentTime(),
             ]);
             refDashBoardData = { ...refDashBoardData, registerCount };
-            const registerSampleData = await executeQuery(getRecentFormData, [
+            const registerSampleData = await executeQuery(registerData, [
               2,
               CurrentTime(),
+              [true],
             ]);
 
             refDashBoardData = { ...refDashBoardData, registerSampleData };
@@ -88,6 +92,10 @@ export class StaffRepository {
               CurrentTime(),
             ]);
             refDashBoardData = { ...refDashBoardData, signUpCount };
+            const signUpData = await executeQuery(getSignUpData, [
+              CurrentTime(),
+            ]);
+            refDashBoardData = { ...refDashBoardData, signUpData };
           case "Feedback":
             // console.log("This For Feedback");
             break;
@@ -96,16 +104,17 @@ export class StaffRepository {
             refDashBoardData = { ...refDashBoardData, trailCount };
             const fessCount = await executeQuery(getFeesDetails, []);
             refDashBoardData = { ...refDashBoardData, fessCount };
-            let trailSampleData = await executeQuery(getRecentFormData, [
+            let trailSampleData = await executeQuery(registerData, [
               2,
               CurrentTime(),
+              [false, null],
             ]);
             // trailSampleData.push({ label: "Trail Data" });
 
             refDashBoardData = { ...refDashBoardData, trailSampleData };
             let paymentPendingSampleData = await executeQuery(
-              getRecentFormData,
-              [6, CurrentTime()]
+              getPaymentBendingData,
+              [6, CurrentTime(), [false, null, true], [5, 6]]
             );
             // paymentPendingSampleData.push({ label: "Payment Pending" });
 
@@ -115,7 +124,6 @@ export class StaffRepository {
             };
             break;
           case "Settings":
-            // console.log("This For Feedback");
             break;
           case "Transaction":
             // console.log("This for Transaction");
@@ -214,7 +222,7 @@ export class StaffRepository {
 
       const token = generateToken(tokenData, true);
       // console.log("refDashBoardData", refDashBoardData);
-
+      
       return encrypt(
         {
           success: true,
@@ -412,7 +420,9 @@ export class StaffRepository {
 
     try {
       const studentId = [userData.refStId, 9];
+      console.log("userData", userData);
       console.log("studentId", studentId);
+
       const updateUserTypeResult = await executeQuery(rejectUser, studentId);
       console.log("updateUserTypeResult", updateUserTypeResult);
 
@@ -428,6 +438,8 @@ export class StaffRepository {
         refUpdatedBy,
         decodedToken.id, //completed
       ];
+      console.log(" -> Line Number ----------------------------------- 441");
+      console.log("historyData", historyData);
 
       const updateHistoryQueryResult = await executeQuery(
         updateHistoryQuery,
@@ -856,6 +868,10 @@ export class StaffRepository {
             temp1.refPerHealthId = JSON.stringify(labelsUpdatedData);
           }
           const changes = getChanges(temp1, temp2);
+          console.log(
+            " -> Line Number ----------------------------------- 873"
+          );
+          console.log("changes", changes);
           for (const key in changes) {
             if (changes.hasOwnProperty(key)) {
               const tempChange = {
@@ -911,6 +927,10 @@ export class StaffRepository {
               }
             }
           }
+          console.log(
+            " -> Line Number ----------------------------------- 931"
+          );
+          console.log("changes", changes);
           await client.query("COMMIT");
         }
       }

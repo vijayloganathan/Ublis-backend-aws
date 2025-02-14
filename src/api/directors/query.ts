@@ -43,6 +43,7 @@ SELECT DISTINCT
   up."refClTo",
   up."refTherapy",
   up."refThreapyCount",
+  up."refThreapyAttend",
   uc."refUcId",
   uc."refCtId",
   uc."refCtValue",
@@ -269,7 +270,7 @@ export const getUpDateList = `SELECT
     TO_CHAR(TO_TIMESTAMP(MIN(txn."transTime"), 'DD/MM/YYYY, HH12:MI:SS am'), 'HH24:MI:SS') AS "refTime",
     COUNT(CASE WHEN notif."refRead" = false THEN 1 END) AS "unreadCount",
     CASE
-        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'Notification'
+        WHEN txn."transTypeId" BETWEEN 11 AND 18 OR txn."transTypeId" = 36 THEN 'Notification'
         WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END AS "groupType"
@@ -282,16 +283,16 @@ JOIN
 LEFT JOIN
     public.branch b ON u."refBranchId" = b."refbranchId"
 WHERE
-    notif."refRead" = false AND ( u."refUtId" IN (1,2,3,5,6))
+    notif."refRead" = false AND u."refUtId" IN (1,2,3,5,6)
 GROUP BY
     u."refStId", u."refSCustId", u."refStFName", u."refStLName", b."refBranchName",
     CASE
-        WHEN txn."transTypeId" BETWEEN 11 AND 18 THEN 'Notification'
+        WHEN txn."transTypeId" BETWEEN 11 AND 18 OR txn."transTypeId" = 36 THEN 'Notification'
         WHEN txn."transTypeId" = 37 THEN 'Approval'
         ELSE 'other'
     END
 ORDER BY
-    u."refStId";
+    u."refStId";;
 `;
 export const getStaffUpdateList = `SELECT
     u."refStId",
@@ -354,7 +355,7 @@ LEFT JOIN public.users u
 ON CAST (th."refStId" AS INTEGER) = u."refStId"
 LEFT JOIN public."transType" tt 
 ON CAST (th."transTypeId" AS INTEGER) = tt."transTypeId"
-WHERE u."refStId"=$1 AND rn."refRead" is not true AND th."transTypeId" IN (11,12,13,14,15,16,17,18)
+WHERE u."refStId"=$1 AND rn."refRead" is not true AND th."transTypeId" IN (11,12,13,14,15,16,17,18,36,40)
 ORDER BY 
     th."transId" ASC;`;
 

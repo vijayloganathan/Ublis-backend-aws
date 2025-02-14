@@ -58,7 +58,7 @@ import {
 import { encrypt } from "../../helper/encrypt";
 import { generateToken, decodeToken } from "../../helper/token";
 import { generateCouponCode, formatDate } from "../../helper/common";
-import e from "cors";
+import { classCount } from "../../helper/classCount";
 
 export class DirectorRepository {
   public async directorStaffPgV1(
@@ -137,9 +137,29 @@ export class DirectorRepository {
 
       const userTransaction = await executeQuery(getUserTransaction, [Id]);
 
+      function formatDate(inputDate: any) {
+        let [datePart] = inputDate.split(",");
+        let [day, month, year] = datePart.trim().split("/");
+        let formattedDate = `${year}-${month.padStart(2, "0")}-${day.padStart(
+          2,
+          "0"
+        )}`;
+        return String(formattedDate);
+      }
+
+      let formattedDate = formatDate(CurrentTime());
+      const Count = await classCount(formattedDate, Id);
+      const therapyCount = {
+        totalSession: userData[0].refThreapyCount,
+        attendSession: userData[0].refThreapyAttend,
+        reSession: userData[0].refThreapyCount - userData[0].refThreapyAttend,
+      };
+
       const data = {
         UserData: userData,
         userTransaction: userTransaction,
+        classCount: Count,
+        therapyCount: therapyCount,
       };
 
       return encrypt(
@@ -211,7 +231,7 @@ export class DirectorRepository {
     userData: any,
     decodedToken: any
   ): Promise<any> {
-    console.log(' -> Line Number ----------------------------------- 214', );
+    console.log(" -> Line Number ----------------------------------- 214");
     const refStId = decodedToken.id;
     const tokenData = {
       id: decodedToken.id,
@@ -219,7 +239,12 @@ export class DirectorRepository {
     };
     const token = generateToken(tokenData, true);
     try {
-      const studentId = [userData.refStId, 6, userData.isTherapy, userData.threapyCount];
+      const studentId = [
+        userData.refStId,
+        6,
+        userData.isTherapy,
+        userData.threapyCount,
+      ];
       const updateUserTypeResult = await executeQuery(
         updateUserType,
         studentId

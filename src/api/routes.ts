@@ -19,6 +19,7 @@ import {
   AttendanceController,
   UserPaymentController,
   TestingController,
+  ClassInfoController,
   // GoogleWorkSpaceController,
 } from "./controller";
 import { Logger } from "winston";
@@ -227,6 +228,16 @@ export class UserProfile implements IRoute {
             pre: [{ method: validateToken, assign: "token" }],
             handler: controller.sessionUpdate,
             description: "Updating The Session Detail",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/profile/ThreapyUpdate",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: controller.ThreapyUpdate,
+            description: "Updating The User Threapy Count",
             auth: false,
           },
         },
@@ -1466,6 +1477,56 @@ export class trailVideo implements IRoute {
 //     });
 //   }
 // }
+export class ClassInfo implements IRoute {
+  public async register(server: any): Promise<any> {
+    return new Promise((resolve) => {
+      const ClassInfoPage = new ClassInfoController();
+      server.route([
+        {
+          method: "GET",
+          path: "/api/v1/classInfo/overView",
+          config: {
+            // pre: [{ method: validateToken, assign: "token" }],
+            handler: ClassInfoPage.overView,
+            description: "Getting OverView Data",
+            auth: false,
+          },
+        },
+        {
+          method: "GET",
+          path: "/api/v1/classInfo/currentStudentData",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: ClassInfoPage.currentStudentData,
+            description: "Getting Current Student Data",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/classInfo/addUserTherapyCount",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: ClassInfoPage.addUserTherapyCount,
+            description: "Adding the student Therapy Count",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/classInfo/monthWiseReport",
+          config: {
+            pre: [{ method: validateToken, assign: "token" }],
+            handler: ClassInfoPage.studentMonthWiseReport,
+            description: "Getting Student Month Wise Report",
+            auth: false,
+          },
+        },
+      ]);
+      resolve(true);
+    });
+  }
+}
 export class Testing implements IRoute {
   public async register(server: any): Promise<any> {
     return new Promise((resolve) => {

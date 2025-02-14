@@ -58,6 +58,15 @@ const label = {
   refMaritalStatus: "Marital Status",
   refWeddingDate: "Wedding Date",
   refHealthIssue: "Medical Issue",
+  refThreapyCount: "Total Therapy Class Want to Attend",
+  refThreapyAttend: "Therapy class attend by the user",
+  refWeekDaysTiming: "Weekdays Timing Selected by the Student",
+  refWeekTiming: "Weekend Timing Selected By the Student",
+  refTherapy: "If the student want therapy session",
+  refPaId: "Student selected Class Package",
+  refClMode: "Student Class Mode",
+  refBatchId: "Student Selected Batch",
+  refBranchId: "Student Selected Branch",
 };
 
 export function reLabelText(key: string): string {

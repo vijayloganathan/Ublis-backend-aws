@@ -23,6 +23,11 @@ import {
   insertSession,
   checkUser,
   fetchBrowsher,
+  updateThreapyCount,
+  getOldData,
+  updateNotification,
+  getUpdatedData,
+  oldThearpyData,
 } from "./query";
 import path from "path";
 
@@ -30,6 +35,8 @@ import { encrypt } from "../../helper/encrypt";
 import { generateToken, generateToken1 } from "../../helper/token";
 import { PoolClient } from "pg";
 import { CurrentTime } from "../../helper/common";
+import { getSessionPackageChanges } from "../../helper/buildquery";
+import { reLabelText } from "../../helper/label";
 import {
   storeFile,
   viewFile,
@@ -366,10 +373,14 @@ export class ProfileRepository {
       client.release(); // Release the client back to the pool
     }
   }
-  public async userRegisterPageDataV1(userData: any): Promise<any> {
+  public async userRegisterPageDataV1(
+    userData: any,
+    decodedToken: any
+  ): Promise<any> {
     const refStId = parseInt(userData.refStId, 10);
     const tokenData = {
-      id: refStId,
+      id: decodedToken.id,
+      branch: decodedToken.branch,
     };
 
     const token = generateToken1(tokenData, true);
@@ -494,14 +505,10 @@ export class ProfileRepository {
         branchId,
         sectionId,
       ]);
-      console.log(" -> Line Number ----------------------------------- 479");
-      console.log("sectionTimeList", sectionTimeList);
       const formattedCustTime = sectionTimeList.reduce((acc, member) => {
         acc[member.refPaId] = member.refPackageName;
         return acc;
       }, {});
-      console.log(" -> Line Number ----------------------------------- 478");
-      console.log("formattedCustTime", formattedCustTime);
 
       const tokenData = {
         id: refStId,
@@ -646,9 +653,9 @@ export class ProfileRepository {
         userData.personalData.refBranchId,
         userData.refStId,
       ]);
+      const oldData = await executeQuery(getOldData, [userData.refStId]);
 
       const user = await executeQuery(checkUser, [userData.refStId]);
-      console.log("user line ----- 640", user);
       const params = [
         userData.refStId,
         userData.personalData.refPaId,
@@ -657,28 +664,60 @@ export class ProfileRepository {
         userData.personalData.refWeekTiming,
         userData.personalData.refWeekDaysTiming,
       ];
-      console.log("params", params);
       if (user.length > 0) {
-        console.log(" line ------ 650");
         await client.query(updateSessionData, params);
       } else {
-        console.log(" line ------ 654");
         await client.query(insertSession, params);
       }
-
-      const transTypeId = 36,
-        transData = "update Session Data",
-        refUpdatedBy = "Front Office / Admin";
-
-      const parasHistory = [
-        transTypeId,
-        transData,
-        userData.refStId,
-        CurrentTime(),
-        refUpdatedBy,
-        decodedToken.id, //completed
+      const getDataParams = [
+        userData.personalData.refBranchId,
+        userData.personalData.refPaId,
+        userData.personalData.refBatchId,
+        userData.personalData.refClMode,
+        userData.personalData.refWeekDaysTiming,
+        userData.personalData.refWeekTiming,
       ];
-      await client.query(updateHistoryQuery, parasHistory);
+      const updatedData = await executeQuery(getUpdatedData, getDataParams);
+
+      const changes = getSessionPackageChanges(updatedData[0], oldData);
+      console.log(" -> Line Number ----------------------------------- 678");
+      console.log("changes", changes);
+
+      for (const key in changes) {
+        if (changes.hasOwnProperty(key)) {
+          const tempChange = {
+            data: changes[key],
+            label: reLabelText(key),
+          };
+
+          const parasHistory = [
+            36,
+            tempChange,
+            userData.refStId,
+            CurrentTime(),
+            "therapist/Admin",
+            decodedToken.id,
+          ];
+
+          const queryResult = await client.query(
+            updateHistoryQuery,
+            parasHistory
+          );
+          if (!queryResult.rowCount) {
+            throw new Error("Failed to update the History.");
+          }
+          const paramsNotification = [queryResult.rows[0].transId, false];
+          const notificationResult = await client.query(
+            updateNotification,
+            paramsNotification
+          );
+          if (!notificationResult.rowCount) {
+            throw new Error("Failed to update The Notification Table.");
+          }
+
+          await client.query("COMMIT");
+        }
+      }
 
       await client.query("COMMIT");
 
@@ -700,6 +739,85 @@ export class ProfileRepository {
       return encrypt(results, true);
     } finally {
       client.release();
+    }
+  }
+  public async ThreapyUpdateV1(userData: any, decodedToken: any): Promise<any> {
+    const client: PoolClient = await getClient();
+    const refStId = decodedToken.id;
+    const tokenData = { id: decodedToken.id, branch: decodedToken.branch };
+    const token = generateToken(tokenData, true);
+
+    try {
+      await client.query("BEGIN");
+      const olddata = await executeQuery(oldThearpyData, [userData.id]);
+      const result: any = await client.query(updateThreapyCount, [
+        userData.id,
+        userData.threapyCount,
+      ]);
+      console.log("result", result);
+
+      const changes: any = {
+        refThreapyCount: {
+          oldValue: olddata[0].refThreapyCount,
+          newValue: result.rows[0].refThreapyCount,
+        },
+      };
+      console.log(" -> Line Number ----------------------------------- 765");
+      console.log("changes", changes);
+
+      for (const key in changes) {
+        if (changes.hasOwnProperty(key)) {
+          const tempChange = {
+            data: changes[key],
+            label: reLabelText(key),
+          };
+
+          const parasHistory = [
+            40,
+            tempChange,
+            userData.id,
+            CurrentTime(),
+            "therapist/Admin",
+            decodedToken.id,
+          ];
+          console.log("parasHistory", parasHistory);
+
+          const queryResult = await client.query(
+            updateHistoryQuery,
+            parasHistory
+          );
+          if (!queryResult.rowCount) {
+            throw new Error("Failed to update the History.");
+          }
+          const paramsNotification = [queryResult.rows[0].transId, false];
+          const notificationResult = await client.query(
+            updateNotification,
+            paramsNotification
+          );
+          if (!notificationResult.rowCount) {
+            throw new Error("Failed to update The Notification Table.");
+          }
+
+          await client.query("COMMIT");
+        }
+      }
+      await client.query("COMMIT");
+
+      const results = {
+        success: true,
+        message: "User threapy Count Is Update Successfully",
+        token: token,
+      };
+      return encrypt(results, true);
+    } catch (error) {
+      console.log("error", error);
+      await client.query("ROLLBACK");
+      const results = {
+        success: false,
+        message: "Error in updatig the user threapy count",
+        token: token,
+      };
+      return encrypt(results, true);
     }
   }
 }

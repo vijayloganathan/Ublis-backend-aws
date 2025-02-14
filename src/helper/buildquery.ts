@@ -60,8 +60,8 @@ const getChanges = (
   updatedData: any,
   oldData: any
 ): { [key: string]: Change } => {
-  console.log("oldData line --------- 38", oldData);
-  console.log("updatedData line ---------- 39", updatedData);
+  // console.log("oldData line --------- 38", oldData);
+  // console.log("updatedData line ---------- 39", updatedData);
   const changes: { [key: string]: Change } = {};
   for (const key in updatedData) {
     if (updatedData.hasOwnProperty(key)) {
@@ -74,7 +74,34 @@ const getChanges = (
     }
   }
 
-  console.log('changes', changes)
+  console.log("changes", changes);
+  return changes;
+};
+
+const getSessionPackageChanges = (
+  updatedData: any,
+  oldData: any[]
+): { [key: string]: Change } => {
+  console.log("oldData line --------- 38", oldData);
+  console.log("updatedData line ---------- 39", updatedData);
+
+  const changes: { [key: string]: Change } = {};
+
+  // Extract the first object from oldData array (assuming it has at least one entry)
+  const oldDataObj = oldData[0] || {};
+
+  for (const key in updatedData) {
+    if (updatedData.hasOwnProperty(key)) {
+      if (updatedData[key] !== oldDataObj[key]) {
+        changes[key] = {
+          oldValue: oldDataObj[key] ?? null, // Ensure oldValue is not undefined
+          newValue: updatedData[key],
+        };
+      }
+    }
+  }
+
+  console.log("changes", changes);
   return changes;
 };
 
@@ -133,4 +160,10 @@ const getChanges1 = (
   return changes;
 };
 
-export { buildUpdateQuery, getChanges, buildInsertQuery, getChanges1 };
+export {
+  buildUpdateQuery,
+  getChanges,
+  buildInsertQuery,
+  getChanges1,
+  getSessionPackageChanges,
+};

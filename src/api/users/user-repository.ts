@@ -193,7 +193,6 @@ export class UserRepository {
       true
     );
   }
-
   public async userSignUpV1(userData: any, domain_code?: any): Promise<any> {
     const hashedPassword = await bcrypt.hash(userData.temp_su_password, 10);
     const userId = uuidv4();
@@ -371,7 +370,6 @@ export class UserRepository {
       );
     }
   }
-
   public async validateUsers(
     userData: any,
     decodedToken: any,
@@ -486,7 +484,6 @@ export class UserRepository {
       );
     }
   }
-
   public async userDashBoardDataV1(
     userData: any,
     decodedToken: any
@@ -523,6 +520,8 @@ export class UserRepository {
     decodedToken: any
   ): Promise<any> {
     const id = decodedToken.id;
+    console.log(" -> Line Number ----------------------------------- 523");
+    console.log("id", id);
     const tokenData = {
       id: decodedToken.id,
       branch: decodedToken.branch,
@@ -530,7 +529,6 @@ export class UserRepository {
 
     let refStId;
     const checkUser = await executeQuery(getUserType, [id]);
-    console.log("checkUser line ------ 519", checkUser);
     if (
       checkUser[0].refUtId == 5 ||
       checkUser[0].refUtId == 6 ||
@@ -541,24 +539,18 @@ export class UserRepository {
     } else {
       refStId = userData.refStId;
     }
-    console.log("refStId line --------- 551", refStId);
 
     const token = generateToken(tokenData, true);
 
     try {
       let profileData = {};
-      console.log("refStId", refStId);
       const Datas = await executeQuery(getProfileData, [refStId]);
       const Data = Datas[0];
       let addresstype = false;
 
-      console.log("Data line ---------------- 561", Data);
       if (Data.refAdAdd1Type == 3) {
-        console.log(" line ----------- 564");
         addresstype = true;
       }
-
-      console.log(" line ----- 569");
 
       function formatDate(isoDate: any) {
         const date = new Date(isoDate); // Create a new Date object
@@ -568,8 +560,6 @@ export class UserRepository {
 
         return `${year}-${month}-${day}`; // Return formatted date
       }
-
-      console.log(" line ----- 580");
 
       const address = {
         addresstype: addresstype,
@@ -588,8 +578,6 @@ export class UserRepository {
       };
 
       profileData = { ...profileData, address };
-
-      console.log("line ---- 600");
 
       const personalData = {
         refSCustId: Data.refSCustId,
@@ -626,13 +614,9 @@ export class UserRepository {
 
       profileData = { ...profileData, personalData };
 
-      console.log(" line ----- 637");
-
       let profileFile = null;
       if (Data.refProfilePath) {
-        console.log("Data.refProfilePath line ---- 640", Data.refProfilePath);
         const profileFilePath = Data.refProfilePath;
-        console.log("profileFilePath line ----- 633", profileFilePath);
         try {
           const fileBuffer = await viewFile(profileFilePath);
           const fileBase64 = fileBuffer.toString("base64"); // Convert file to base64 to pass in response
@@ -646,7 +630,6 @@ export class UserRepository {
         }
       }
 
-      console.log(" line ----- 657");
       profileData = { ...profileData, profileFile }; // Add file to profile data
 
       const generalhealth = {
@@ -667,8 +650,6 @@ export class UserRepository {
 
       profileData = { ...profileData, generalhealth };
 
-      console.log("line ---- 677");
-
       const presentHealth = {
         refPresentHealth: Data.refPerHealthId,
         refOtherActivities: Data.refOtherActivities,
@@ -686,8 +667,6 @@ export class UserRepository {
 
       profileData = { ...profileData, presentHealth };
 
-      console.log("Line ---- 697");
-
       const communication = {
         refCtMobile: Data.refCtMobile,
         refCtEmail: Data.refCtEmail,
@@ -698,11 +677,8 @@ export class UserRepository {
 
       profileData = { ...profileData, communication };
 
-      console.log("line ----- 7098");
-
       const healthResult = await executeQuery(fetchPresentHealthProblem, []);
 
-      console.log("line ----------- 712");
       const presentHealthProblem = healthResult.reduce((acc: any, row: any) => {
         acc[row.refHealthId] = row.refHealth;
         return acc;
@@ -710,14 +686,11 @@ export class UserRepository {
 
       profileData = { ...profileData, presentHealthProblem };
 
-      console.log("line -------------- 720");
-
       const modeOfCommunicationResult = await executeQuery(
         getCommunicationType,
         []
       );
 
-      console.log("line --------------- 727");
       const modeOfCommunication = modeOfCommunicationResult.reduce(
         (acc: any, row: any) => {
           acc[row.refCtId] = row.refCtText;
@@ -727,8 +700,6 @@ export class UserRepository {
       );
 
       profileData = { ...profileData, modeOfCommunication };
-
-      console.log(" line ---- 738");
 
       const refSessionData = {
         refTimeMembersId: Data.refTimeMembersId,
@@ -741,22 +712,14 @@ export class UserRepository {
         refClassMode: Data.refClassMode,
       };
 
-      console.log(" line ----------- 752");
-
       profileData = { ...profileData, refSessionData };
 
       let getMedDocument = await executeQuery(fetMedDocData, [refStId]);
-      console.log("getMedDocument line ----- 756", getMedDocument);
 
-      console.log(" line ---- 757");
-
-      console.log("getMedDocument.length", getMedDocument.length);
       if (getMedDocument.length > 0) {
-        console.log(" line ----- 761");
         for (let i = 0; i < getMedDocument.length; i++) {
           if (getMedDocument[i].refMedDocPath.length > 0) {
             const filePath = getMedDocument[i].refMedDocPath;
-            console.log("filePath", filePath);
             const fileBuffer = await viewFile(filePath);
             const fileBase64 = fileBuffer.toString("base64");
 
@@ -799,29 +762,17 @@ export class UserRepository {
   ): Promise<any> {
     const client: PoolClient = await getClient();
     let refStId;
-    console.log("userData.refStId line ---------- 809", userData);
     if (!userData.refStId) {
-      console.log(
-        "decodedToken.id -> Line Number ----------------------------------- 810",
-        decodedToken.id
-      );
       refStId = decodedToken.id;
     } else {
-      refStId = userData.r;
-      console.log(
-        "refStId -> Line Number ----------------------------------- 814",
-        refStId
-      );
+      refStId = userData.refStId;
     }
-    console.log("refStId", refStId);
     const tokenData = { id: decodedToken.id, branch: decodedToken.branch };
     const token = generateToken(tokenData, true);
 
     let refUtId: string;
 
     const checkUser = await executeQuery(getUserType, [refStId]);
-    console.log(" -> Line Number ----------------------------------- 820");
-    console.log("checkUser", checkUser);
 
     if (checkUser[0].refUtId == 5 || checkUser[0].refUtId == 6) {
       refUtId = "user";
@@ -830,7 +781,6 @@ export class UserRepository {
     }
 
     try {
-      console.log("userData line ------------- 757", userData);
       await client.query("BEGIN");
       for (const section in userData) {
         if (userData.hasOwnProperty(section)) {
@@ -910,15 +860,12 @@ export class UserRepository {
                 tableName
               );
               newData = await executeQuery(getUserData, [refStId]);
-              console.log("newData line ----- 836", newData);
 
               olddata = newData[0];
-              console.log("olddata line ----------------- 839", olddata);
-              console.log("userData line ------------ 841", userData);
+
               userData = { ...userData, olddata };
-              console.log("userData line -------------- 841", userData);
+
               updatedData = userData.medicalIssue;
-              console.log("updatedData line --------- 841", updatedData);
               oldData = userData.olddata;
               break;
 
@@ -929,7 +876,6 @@ export class UserRepository {
                 "{{tableName}}",
                 tableName
               );
-              console.log("getUserData line ---- 851", getUserData);
               newData = await executeQuery(getUserData, [refStId]);
 
               olddata = newData[0];
@@ -946,10 +892,6 @@ export class UserRepository {
                 tableName
               );
 
-              console.log(
-                "line --------------------------------------- 868 \n"
-              );
-              console.log("getUserData line ---- 867", getUserData);
               newData = await executeQuery(getUserData, [refStId]);
 
               olddata = newData[0];
@@ -960,10 +902,6 @@ export class UserRepository {
 
             case "presentHealth":
               updatedData = userData.presentHealth;
-              console.log(
-                " -> Line Number ----------------------------------- 957"
-              );
-              console.log("updatedData", updatedData);
               const refPerHealthId = JSON.stringify(
                 updatedData.refPresentHealth
               );
@@ -1034,22 +972,17 @@ export class UserRepository {
                   updatedData[i],
                   identifier
                 );
-                console.log("updateQuery line -------- 946 \n", updateQuery);
-                console.log("values line --------- 947 \n", values);
+
                 userResult = await client.query(updateQuery, values);
               } else {
                 updatedData[i] = { ...updatedData[i], refStId: refStId };
-                console.log("tableName line ------------ 955", tableName);
-                console.log("updatedData[i] ------------- 956", updatedData[i]);
+
                 const { insertQuery, values } = buildInsertQuery(
                   tableName,
                   updatedData[i]
                 );
 
-                console.log("insertQuery line ----------- 962", insertQuery);
-                console.log("values  ------------------- 963", values);
                 userResult = await client.query(insertQuery, values);
-                console.log("userResult line ------------ 965", userResult);
               }
             }
             getUserData = rawGetUserDataQuery.replace(
@@ -1061,19 +994,13 @@ export class UserRepository {
             olddata = newData;
             oldData = olddata;
           } else {
-            console.log("tableName", tableName);
-            console.log("updatedData", updatedData);
-            console.log("identifier", identifier);
             const { updateQuery, values } = buildUpdateQuery(
               tableName,
               updatedData,
               identifier
             );
-            console.log("updateQuery line -------- 982", updateQuery);
-            console.log("values line ------------- 983", values);
 
             userResult = await client.query(updateQuery, values);
-            console.log("userResult line ----------- 986", userResult);
           }
 
           if (oldData.refPerHealthId && updatedData.refPerHealthId) {
@@ -1101,24 +1028,18 @@ export class UserRepository {
 
           let changes: any;
           if (userData.medicalDocuments) {
-            console.log(" line ----- 1002");
             changes = getChanges1(updatedData, oldData);
           } else {
-            console.log("line ----- 1006");
             changes = getChanges(updatedData, oldData);
           }
 
-          console.log("line ----- 1000000000000000");
-
+          console.log("changes", changes);
           for (const key in changes) {
-            console.log("line --------- 1010");
             if (changes.hasOwnProperty(key)) {
-              console.log("line ----- 1011");
               const tempChange = {
                 data: changes[key],
                 label: reLabelText(key),
               };
-              console.log("tempChange line ----- 1014", tempChange);
 
               const parasHistory = [
                 transTypeId,
@@ -1129,14 +1050,10 @@ export class UserRepository {
                 decodedToken.id,
               ];
 
-              console.log("parasHistory", parasHistory);
-
-              console.log("line ----- 1024");
               const queryResult = await client.query(
                 updateHistoryQuery,
                 parasHistory
               );
-              console.log("queryResult line ----- 1029", queryResult);
               if (!queryResult.rowCount) {
                 throw new Error("Failed to update the History.");
               }
@@ -1151,8 +1068,6 @@ export class UserRepository {
 
               await client.query("COMMIT");
             }
-
-            console.log("line ---- 1050");
           }
         }
       }

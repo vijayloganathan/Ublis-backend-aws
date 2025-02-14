@@ -312,3 +312,53 @@ WHERE "refStId" = $1;
 
 export const fetchBrowsher = `SELECT * FROM public.refbrowsher WHERE "refBranchId" = $1
 `;
+
+export const updateThreapyCount = `UPDATE
+  public."refUserPackage"
+SET
+  "refThreapyCount" = $2
+WHERE
+  "refStId" = $1
+RETURNING *;`;
+
+export const getOldData = `SELECT
+  b."refBranchName" AS "refBranchId",
+  rp."refPackageName" AS "refPaId",
+  CASE 
+    WHEN up."refClMode" = 1 THEN 'Online' 
+    ELSE 'Offline' 
+  END AS "refClMode",
+  rm."refTimeMembers" AS "refBatchId",
+  pt."refTime" AS "refWeekTiming",
+  pt1."refTime" AS "refWeekDaysTiming",
+  CASE 
+    WHEN up."refTherapy" = true THEN 'Yes' 
+    ELSE 'No' 
+  END AS "refTherapy",
+  up."refThreapyCount",
+  up."refThreapyAttend"
+FROM
+  public."users" u
+  JOIN public."refUserPackage" up ON CAST(u."refStId" AS INTEGER) = up."refStId"
+  JOIN public."refPackage" rp ON CAST(up."refPaId" AS INTEGER) = rp."refPaId"
+  JOIN public."refMembers" rm ON CAST(up."refBatchId" AS INTEGER) = rm."refTimeMembersID"
+  JOIN public."refPaTiming" pt ON CAST(up."refWeekTiming" AS INTEGER) = pt."refTimeId"
+  JOIN public."refPaTiming" pt1 ON CAST(up."refWeekDaysTiming" AS INTEGER) = pt1."refTimeId"
+  JOIN public."branch" b ON CAST(u."refBranchId" AS INTEGER) = b."refbranchId"
+WHERE
+  up."refStId" = $1;`;
+
+export const updateNotification = `INSERT INTO public."refNotification" ("transId", "refRead") VALUES ($1, $2);`;
+
+export const getUpdatedData = `SELECT 
+    (SELECT b."refBranchName" FROM branch b WHERE b."refbranchId" = $1) AS "refBranchId",
+    (SELECT rp."refPackageName" FROM public."refPackage" rp WHERE rp."refPaId" = $2) AS "refPaId",
+    (SELECT rm."refTimeMembers" FROM public."refMembers" rm WHERE rm."refTimeMembersID" = $3) AS "refBatchId",
+    (CASE 
+        WHEN $4 = 1 THEN 'Online' 
+        ELSE 'Offline' 
+    END) AS "refClMode",
+    (SELECT pt."refTime" FROM public."refPaTiming" pt WHERE pt."refTimeId" = $5) AS "refWeekDaysTiming",
+    (SELECT pt."refTime" FROM public."refPaTiming" pt WHERE pt."refTimeId" = $6) AS "refWeekTiming";`;
+
+export const oldThearpyData = `SELECT * FROM public."refUserPackage" rp WHERE rp."refStId"=$1`;

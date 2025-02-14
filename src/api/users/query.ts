@@ -13,8 +13,8 @@ export const getCustomerCount = `SELECT COUNT(*) FROM public.users u WHERE u."re
 export const insertUserQuery = `
   INSERT INTO public.users (
     "refStFName", "refStLName", "refStDOB", "refStAge", 
-   "refSCustId","refUtId"
-  ) VALUES ($1, $2, $3, $4, $5, $6) 
+   "refSCustId","refUtId","refBranchId"
+  ) VALUES ($1, $2, $3, $4, $5, $6,1) 
   RETURNING "refStId", "refSCustId";
 `;
 
@@ -78,14 +78,23 @@ export const changePassword = `UPDATE public."refUsersDomain"
 SET "refCustHashedPassword"=$1,"refCustPassword"=$2 
 WHERE "refStId"=$3;`;
 
-export const selectUserData = `SELECT u."refUtId",u."refStFName",u."refStLName",ud."refUserName",u."refProfilePath",INITCAP(ut."refUserType") AS refUserType
-FROM public."users" u
-JOIN
-	public."refUsersDomain" ud
-ON u."refStId" = ud."refStId"
-JOIN public."refUserType" ut
-On CAST (u."refUtId" AS INTEGER) = ut."refUtId"
-WHERE u."refStId" = $1;`;
+export const selectUserData = `SELECT
+  u."refUtId",
+  u."refStFName",
+  u."refStLName",
+  ud."refUserName",
+  u."refProfilePath",
+  uc."refCtEmail",
+  uc."refCtMobile",
+  uc."refCtWhatsapp",
+  INITCAP(ut."refUserType") AS refUserType
+FROM
+  public."users" u
+  JOIN public."refUserCommunication" uc ON CAST (uc."refStId" AS INTEGER) = u."refStId"
+  JOIN public."refUsersDomain" ud ON u."refStId" = ud."refStId"
+  JOIN public."refUserType" ut On CAST(u."refUtId" AS INTEGER) = ut."refUtId"
+WHERE
+  u."refStId" = $1;`;
 
 export const getUserType = 'SELECT "refUtId" FROM  users WHERE "refStId"=$1;';
 

@@ -152,6 +152,17 @@ export const getSignUpCount = `  SELECT
       GROUP BY u."refStId"
   ) AS subquery;`;
 
+export const getSignUpData = `SELECT DISTINCT
+  ON (th."refStId") u."refStFName",u."refStLName",th."transTime"
+FROM
+  public.users u
+  INNER JOIN public."refUserTxnHistory" th ON th."refStId" = u."refStId"
+WHERE
+  u."refUtId" = 1
+  AND th."transTypeId" = 1
+  AND DATE (th."transTime") = DATE (TO_TIMESTAMP($1, 'DD/MM/YYYY, HH12:MI:SS PM'))
+  LIMIT 5;`;
+
 export const getRegisterCount = `SELECT 
     COUNT(CASE 
         WHEN DATE(TO_TIMESTAMP(th."transTime", 'DD/MM/YYYY, HH12:MI:SS am')) = DATE(TO_TIMESTAMP($1, 'DD/MM/YYYY, HH12:MI:SS am')) 
@@ -181,32 +192,102 @@ export const getUserType = 'SELECT "refUtId" FROM  users WHERE "refStId"=$1;';
 
 export const getStaffRestriction = `SELECT "columnName" FROM public."refRestrictions" WHERE "refUtId"=$1`;
 
-export const getUserCount = `WITH total_count AS (
-    SELECT COUNT(*) AS total
-    FROM public."users"
-    WHERE "refUtId" IN (1, 2, 3, 5, 6)
-)
-SELECT 
-    rut."refUserType" AS user_type_label,
-    COUNT(u."refUtId") AS count,
-    ROUND(COUNT(u."refUtId")::DECIMAL / total.total * 100, 2) AS percentage
-FROM 
-    public."users" u
-JOIN 
-    public."refUserType" rut ON u."refUtId" = rut."refUtId"
-JOIN 
-    total_count total ON true
-WHERE 
-    u."refUtId" IN (1, 2, 3, 5, 6)
-GROUP BY 
-    rut."refUserType", total.total;
+// export const getUserCount = `WITH total_count AS (
+//     SELECT COUNT(*) AS total
+//     FROM public."users"
+//     WHERE "refUtId" IN (1, 2, 3, 5, 6)
+// )
+// SELECT
+//     rut."refUserType" AS user_type_label,
+//     COUNT(u."refUtId") AS count,
+//     ROUND(COUNT(u."refUtId")::DECIMAL / total.total * 100, 2) AS percentage
+// FROM
+//     public."users" u
+// JOIN
+//     public."refUserType" rut ON u."refUtId" = rut."refUtId"
+// JOIN
+//     total_count total ON true
+// WHERE
+//     u."refUtId" IN (1, 2, 3, 5, 6)
+// GROUP BY
+//     rut."refUserType", total.total;
 
+// `;
+export const getUserCount = `WITH
+  total_count AS (
+    SELECT
+      COUNT(*) AS total
+    FROM
+      public."users"
+    WHERE
+      "refUtId" IN (1, 2, 3, 5, 6)
+    UNION ALL
+    SELECT
+      COUNT(*)
+    FROM
+      public."users" u
+      JOIN public."refUserPackage" up ON CAST(up."refStId" AS INTEGER) = u."refStId"
+    WHERE
+      up."refThreapyCount" >= 1
+      AND u."refUtId" = 5
+      AND (
+        up."refThreapyAttend" IS NULL
+        OR up."refThreapyCount" > up."refThreapyAttend"
+      )
+  ),
+  final_total AS (
+    SELECT
+      SUM(total) AS grand_total
+    FROM
+      total_count
+  )
+SELECT
+  user_type_label,
+  count,
+  ROUND(
+    count::DECIMAL / (
+      SELECT
+        grand_total
+      FROM
+        final_total
+    ) * 100,
+    2
+  ) AS percentage
+FROM
+  (
+    -- Counting Users by User Type
+    SELECT
+      rut."refUserType" AS user_type_label,
+      COUNT(u."refUtId") AS count
+    FROM
+      public."users" u
+      JOIN public."refUserType" rut ON u."refUtId" = rut."refUtId"
+    WHERE
+      u."refUtId" IN (1, 2, 3, 5, 6)
+    GROUP BY
+      rut."refUserType"
+    UNION ALL
+    -- Counting Users with Therapy Condition
+    SELECT
+      'Therapy' AS user_type_label,
+      COUNT(*) AS count
+    FROM
+      public."users" u
+      JOIN public."refUserPackage" up ON CAST(up."refStId" AS INTEGER) = u."refStId"
+    WHERE
+      up."refThreapyCount" >= 1
+      AND u."refUtId" = 5
+      AND (
+        up."refThreapyAttend" IS NULL
+        OR up."refThreapyCount" > up."refThreapyAttend"
+      )
+  ) AS counts;
 `;
 
 export const getStaffCount = `WITH total_count AS (
     SELECT COUNT(*) AS total
     FROM public."users"
-    WHERE "refUtId" IN (4,8,10,11)
+    WHERE "refUtId" IN (4,8,10,11,12)
 )
 SELECT 
     rut."refUserType" AS user_type_label,
@@ -219,7 +300,7 @@ JOIN
 JOIN 
     total_count total ON true
 WHERE 
-    u."refUtId" IN (4,8,10,11)
+    u."refUtId" IN (4,8,10,11,12)
 GROUP BY 
     rut."refUserType", total.total;`;
 
@@ -235,6 +316,39 @@ SELECT
     COUNT(CASE WHEN u."transTime"::date = CURRENT_DATE THEN 1 END) AS count_today,
     COUNT(CASE WHEN u."transTime"::date != CURRENT_DATE THEN 1 END) AS count_other_days
 FROM user_data u;`;
+
+export const registerData = `SELECT DISTINCT
+  ON (th."refStId") u."refStFName",u."refStLName",th."transTime"
+FROM
+  public.users u
+  INNER JOIN public."refUserTxnHistory" th ON th."refStId" = u."refStId"
+WHERE
+  u."refUtId" = $1
+  AND th."transTypeId" = 3
+  AND (
+    u."refHealthIssue" = ANY ($3)
+    OR ($3 && ARRAY[NULL]::BOOLEAN[])
+  )
+  AND DATE (th."transTime") = DATE (TO_TIMESTAMP($2, 'DD/MM/YYYY, HH12:MI:SS PM'))
+  LIMIT 5;`;
+
+export const getPaymentBendingData = `SELECT DISTINCT ON (th."refStId") 
+  u."refStFName", 
+  u."refStLName", 
+  th."transTime"
+FROM public.users u
+INNER JOIN public."refUserTxnHistory" th 
+ON th."refStId" = u."refStId"
+WHERE 
+  u."refUtId" = $1
+  AND th."transTypeId" = ANY($4::INTEGER[])
+  AND (
+    u."refHealthIssue" = ANY ($3)
+    OR ($3 && ARRAY[NULL]::BOOLEAN[]) -- Check if NULL is present in the array
+  )
+  AND DATE(th."transTime") = DATE(TO_TIMESTAMP($2, 'DD/MM/YYYY, HH12:MI:SS PM'))
+LIMIT 5;
+`;
 
 export const getRecentFormData = `SELECT
   *
@@ -254,10 +368,9 @@ FROM
 WHERE
   u."refUtId" = $1
   AND (
-      u."refHealthIssue" IS false
-      OR u."refHealthIssue" IS NULL
-    )
- 
+    u."refHealthIssue" = ANY ($3)
+    OR ($3 && ARRAY[NULL]::BOOLEAN[]) -- Check if NULL is present in the array
+  )
 LIMIT
   5;
 `;
