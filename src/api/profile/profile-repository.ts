@@ -377,7 +377,10 @@ export class ProfileRepository {
     userData: any,
     decodedToken: any
   ): Promise<any> {
-    const refStId = parseInt(userData.refStId, 10);
+    
+    const refStId = decodedToken.id;
+    console.log('refStId', refStId)
+    
     const tokenData = {
       id: decodedToken.id,
       branch: decodedToken.branch,
@@ -401,8 +404,8 @@ export class ProfileRepository {
       }
 
       function formatDate(isoDate: any) {
-        const date = new Date(isoDate); // Create a new Date object
-        const day = String(date.getDate()).padStart(2, "0"); // Get the day and pad with zero if needed
+        const date = new Date(isoDate);
+        const day = String(date.getDate()).padStart(2, "0");
         const month = String(date.getMonth() + 1).padStart(2, "0");
         const year = date.getFullYear();
 

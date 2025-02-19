@@ -27,6 +27,11 @@ function generateToken(tokenData: object, action: boolean): string | object {
 }
 
 function generateToken1(tokenData: object, action: boolean): string | object {
+  console.log(' -> Line Number ----------------------------------- 30', );
+  console.log('action', action)
+  console.log(' -> Line Number ----------------------------------- 30', );
+  console.log('tokenData', tokenData)
+  
   if (action) {
     const token = jwt.sign(tokenData, process.env.ACCESS_TOKEN as string, {
       // Do not set `expiresIn` for an infinite token lifespan
@@ -59,6 +64,7 @@ function validateToken(request: any, h: ResponseToolkit) {
 
   const token = authHeader.split(" ")[1];
   const decodedToken = decodeToken(token);
+  console.log(' -> Line Number ----------------------------------- 62', );
   console.log("decodedToken", decodedToken);
 
   if ("error" in decodedToken) {

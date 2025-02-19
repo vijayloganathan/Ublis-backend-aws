@@ -114,6 +114,11 @@ export const getFollowUpLabel = `
 
 export const getDataForUserManagement = `
 SELECT DISTINCT ON (u."refSCustId") 
+    CASE 
+        WHEN EXTRACT(YEAR FROM AGE(u."refStDOB")) > 18 
+        THEN 'Adult' 
+        ELSE 'Kids' 
+    END AS "userType",
     u.*,
     uc.*,
     ad.*,
@@ -121,11 +126,11 @@ SELECT DISTINCT ON (u."refSCustId")
     u."refStId" AS "refStId"
 FROM public.users u
 LEFT JOIN public."refUserCommunication" uc
-  ON CAST(u."refStId" AS INTEGER) = uc."refStId"
+  ON u."refStId" = uc."refStId"
 LEFT JOIN public."refUserAddress" ad
-  ON CAST(u."refStId" AS INTEGER) = ad."refStId"
+  ON u."refStId" = ad."refStId"
 LEFT JOIN public."refGeneralHealth" gh
-  ON CAST(u."refStId" AS INTEGER) = gh."refStId"
+  ON u."refStId" = gh."refStId"
 WHERE u."refUtId" IN (1, 2, 3, 5, 6)
 ORDER BY u."refSCustId", u."refStId";`;
 

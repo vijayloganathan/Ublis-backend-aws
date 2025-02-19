@@ -395,6 +395,8 @@ export class UserProfileController {
       id: request.plugins.token.id,
       branch: request.plugins.token.branch,
     };
+    console.log(' -> Line Number ----------------------------------- 398', );
+    console.log('decodedToken', decodedToken)
 
     try {
       logger.info(`GET URL REQ => ${request.url.href}`);
@@ -412,10 +414,9 @@ export class UserProfileController {
           .code(400);
       }
 
-      // Pass refStId and userId to the repository function
       const entity = await this.resolver.userRegisterPageDataV1(
-        { refStId }, // Add userId here
-        domainCode
+        request.payload,
+        decodedToken
       );
 
       if (entity.success) {

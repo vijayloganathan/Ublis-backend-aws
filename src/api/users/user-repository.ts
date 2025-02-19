@@ -519,6 +519,9 @@ export class UserRepository {
     userData: any,
     decodedToken: any
   ): Promise<any> {
+
+    console.log(' -> Line Number ----------------------------------- 523', );
+    console.log('decodedToken', decodedToken)
     const id = decodedToken.id;
     console.log(" -> Line Number ----------------------------------- 523");
     console.log("id", id);
