@@ -395,8 +395,8 @@ export class UserProfileController {
       id: request.plugins.token.id,
       branch: request.plugins.token.branch,
     };
-    console.log(' -> Line Number ----------------------------------- 398', );
-    console.log('decodedToken', decodedToken)
+    console.log(" -> Line Number ----------------------------------- 398");
+    console.log("decodedToken", decodedToken);
 
     try {
       logger.info(`GET URL REQ => ${request.url.href}`);
@@ -4407,6 +4407,39 @@ export class ClassInfoController {
     request: any,
     response: Hapi.ResponseToolkit
   ): Promise<any> => {
+    const decodedToken = {
+      id: request.plugins.token.id,
+      branch: request.plugins.token.branch,
+    };
+    // const decodedToken = { id: 1, branch: 1 };
+    try {
+      logger.info(`GET URL REQ => ${request.url.href}`);
+      const entity = await this.resolver.overViewV1(
+        request.payload,
+        decodedToken
+      );
+
+      if (entity.success) {
+        return response.response(entity).code(200);
+      }
+      return response.response(entity).code(200);
+    } catch (error) {
+      logger.error("error in Getting Overview Data", error);
+      return response
+        .response({
+          success: false,
+          message:
+            error instanceof Error
+              ? error.message
+              : "An unknown error occurred",
+        })
+        .code(500);
+    }
+  };
+  public overViewChart = async (
+    request: any,
+    response: Hapi.ResponseToolkit
+  ): Promise<any> => {
     // const decodedToken = {
     //   id: request.plugins.token.id,
     //   branch: request.plugins.token.branch,
@@ -4414,7 +4447,7 @@ export class ClassInfoController {
     const decodedToken = { id: 1, branch: 1 };
     try {
       logger.info(`GET URL REQ => ${request.url.href}`);
-      const entity = await this.resolver.overViewV1(
+      const entity = await this.resolver.overViewChartV1(
         request.payload,
         decodedToken
       );

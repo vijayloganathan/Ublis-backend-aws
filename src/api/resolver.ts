@@ -924,6 +924,12 @@ export class ClassInfoResolver {
   public async overViewV1(user_data: any, token_data: any): Promise<any> {
     return await this.ClassInfoRepository.overViewV1(user_data, token_data);
   }
+  public async overViewChartV1(user_data: any, token_data: any): Promise<any> {
+    return await this.ClassInfoRepository.overViewChartV1(
+      user_data,
+      token_data
+    );
+  }
   public async currentStudentDataV1(
     user_data: any,
     token_data: any

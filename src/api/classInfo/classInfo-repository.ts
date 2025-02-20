@@ -5,6 +5,7 @@ import {
   addTherapyAttendCount,
   updateHistoryQuery,
   studentMonthWiseReport,
+  monthWiseCount,
 } from "./query";
 import { executeQuery } from "../../helper/db";
 import { CurrentTime } from "../../helper/common";
@@ -19,162 +20,50 @@ export class ClassInfoRepository {
     };
     const token = generateToken(tokenData, true);
     try {
-      const Data=await executeQuery(studentMonthWiseReport,["2025-02-01"])
-
-      function countPackagesWithStudentTypes(data: any[]): { 
-        package: { 
-          name: string; 
-          count: number; 
-          studentType?: { 
-            name: string; 
-            count: number; 
-            userType?: { 
-              name: string; 
-              count: number; 
-              Gender?: { name: string; count: number }[] 
-            }[] 
-          }[] 
-        }[] 
-      } {
-        const packageMap: Record<string, { count: number; studentTypes: Record<string, { count: number; userTypes: Record<string, { count: number; genders: Record<string, number> }> }> }> = {};
-      
-        data.forEach(item => {
-          const packageName = item.refPackageName;
-          const studentType = item.studentType;
-          const userType = item.userType;
-          const gender = item.refStSex;
-      
-          if (!packageMap[packageName]) {
-            packageMap[packageName] = { count: 0, studentTypes: {} };
-          }
-      
-          packageMap[packageName].count += 1;
-      
-          if (!packageMap[packageName].studentTypes[studentType]) {
-            packageMap[packageName].studentTypes[studentType] = { count: 0, userTypes: {} };
-          }
-      
-          packageMap[packageName].studentTypes[studentType].count += 1;
-      
-          if (!packageMap[packageName].studentTypes[studentType].userTypes[userType]) {
-            packageMap[packageName].studentTypes[studentType].userTypes[userType] = { count: 0, genders: {} };
-          }
-      
-          packageMap[packageName].studentTypes[studentType].userTypes[userType].count += 1;
-          packageMap[packageName].studentTypes[studentType].userTypes[userType].genders[gender] = 
-            (packageMap[packageName].studentTypes[studentType].userTypes[userType].genders[gender] || 0) + 1;
-        });
-      
-        // Convert to desired format
-        const packageArray = Object.entries(packageMap).map(([packageName, packageDetails]) => ({
-          name: packageName,
-          count: packageDetails.count,
-          studentType: Object.entries(packageDetails.studentTypes).map(([studentTypeName, studentTypeDetails]) => ({
-            name: studentTypeName,
-            count: studentTypeDetails.count,
-            userType: Object.entries(studentTypeDetails.userTypes).map(([userTypeName, userTypeDetails]) => ({
-              name: userTypeName,
-              count: userTypeDetails.count,
-              Gender: Object.entries(userTypeDetails.genders).map(([genderName, count]) => ({
-                name: genderName,
-                count
-              }))
-            }))
-          }))
-        }));
-      
-        return { package: packageArray };
-      }
-
-      const count = countPackagesWithStudentTypes(Data)
-
-      function countWeekTimingsWithStudentTypes(data: any[]): { 
-        WeekTimings: { 
-          name: string; 
-          count: number; 
-          studentType?: { 
-            name: string; 
-            count: number; 
-            userType?: { 
-              name: string; 
-              count: number; 
-              Gender?: { name: string; count: number }[] 
-            }[] 
-          }[] 
-        }[] 
-      } {
-        const timingMap: Record<string, { count: number; studentTypes: Record<string, { count: number; userTypes: Record<string, { count: number; genders: Record<string, number> }> }> }> = {};
-      
-        data.forEach(item => {
-          // Combine WeekDaysTiming and WeekEndTiming into a single array
-          const timings = [item.WeekDaysTiming, item.WeekEndTiming].filter(Boolean); // Remove null/undefined values
-      
-          timings.forEach(timing => {
-            const studentType = item.studentType;
-            const userType = item.userType;
-            const gender = item.refStSex;
-      
-            if (!timingMap[timing]) {
-              timingMap[timing] = { count: 0, studentTypes: {} };
-            }
-      
-            timingMap[timing].count += 1;
-      
-            if (!timingMap[timing].studentTypes[studentType]) {
-              timingMap[timing].studentTypes[studentType] = { count: 0, userTypes: {} };
-            }
-      
-            timingMap[timing].studentTypes[studentType].count += 1;
-      
-            if (!timingMap[timing].studentTypes[studentType].userTypes[userType]) {
-              timingMap[timing].studentTypes[studentType].userTypes[userType] = { count: 0, genders: {} };
-            }
-      
-            timingMap[timing].studentTypes[studentType].userTypes[userType].count += 1;
-            timingMap[timing].studentTypes[studentType].userTypes[userType].genders[gender] = 
-              (timingMap[timing].studentTypes[studentType].userTypes[userType].genders[gender] || 0) + 1;
-          });
-        });
-      
-        // Convert to desired format
-        const timingArray = Object.entries(timingMap).map(([timingName, timingDetails]) => ({
-          name: timingName,
-          count: timingDetails.count,
-          studentType: Object.entries(timingDetails.studentTypes).map(([studentTypeName, studentTypeDetails]) => ({
-            name: studentTypeName,
-            count: studentTypeDetails.count,
-            userType: Object.entries(studentTypeDetails.userTypes).map(([userTypeName, userTypeDetails]) => ({
-              name: userTypeName,
-              count: userTypeDetails.count,
-              Gender: Object.entries(userTypeDetails.genders).map(([genderName, count]) => ({
-                name: genderName,
-                count
-              }))
-            }))
-          }))
-        }));
-      
-        return { WeekTimings: timingArray };
-      }
-      
-      
-      const TimingCount = countWeekTimingsWithStudentTypes(Data)
-
+      const Data = await executeQuery(studentMonthWiseReport, [
+        userData.refMonth,
+      ]);
 
       const results = {
         success: true,
-        message: "Testing Success",
+        message: "Class Info Overview Page Data",
         token: token,
-        overViewCount: TimingCount,
+        Data: Data,
+      };
+      return encrypt(results, true);
+    } catch (error) {
+      const results = {
+        success: false,
+        message: "Error in passing Class Info OverView Page Data",
+        token: token,
+      };
+      return encrypt(results, true);
+    }
+  }
+  public async overViewChartV1(userData: any, decodedToken: any): Promise<any> {
+    const refStId = decodedToken.id;
+    const tokenData = {
+      id: decodedToken.id,
+      branch: decodedToken.branch,
+    };
+    const token = generateToken(tokenData, true);
+    try {
+      const Data = await executeQuery(monthWiseCount, [userData.refYear]);
+
+      const results = {
+        success: true,
+        message: "Class Info Overview Chart count",
+        token: token,
+        Data: Data,
       };
       return encrypt(results, false);
     } catch (error) {
       const results = {
         success: false,
-        message: "Testing Failed",
+        message: "Error in passing Class Info OverView Chart Count Data",
         token: token,
       };
-      return encrypt(results, false);
+      return encrypt(results, true);
     }
   }
   public async currentStudentDataV1(

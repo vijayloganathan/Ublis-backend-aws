@@ -1483,12 +1483,22 @@ export class ClassInfo implements IRoute {
       const ClassInfoPage = new ClassInfoController();
       server.route([
         {
-          method: "GET",
+          method: "POST",
           path: "/api/v1/classInfo/overView",
           config: {
-            // pre: [{ method: validateToken, assign: "token" }],
+            pre: [{ method: validateToken, assign: "token" }],
             handler: ClassInfoPage.overView,
             description: "Getting OverView Data",
+            auth: false,
+          },
+        },
+        {
+          method: "POST",
+          path: "/api/v1/classInfo/overView/chart",
+          config: {
+            // pre: [{ method: validateToken, assign: "token" }],
+            handler: ClassInfoPage.overViewChart,
+            description: "Getting Count for Chart",
             auth: false,
           },
         },

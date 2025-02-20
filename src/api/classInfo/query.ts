@@ -363,3 +363,27 @@ WHERE
 ORDER BY
   u."refStId",
   txn."transTime" ASC;`;
+
+export const monthWiseCount = `WITH months AS (
+    SELECT generate_series(1, 12) AS month_num
+)
+SELECT 
+    TO_CHAR(make_date(EXTRACT(YEAR FROM TO_DATE($1, 'YYYY'))::INT, m.month_num, 1), 'Month') AS month_name,
+    COUNT(rp."refPayFrom") AS record_count
+FROM 
+    months m
+LEFT JOIN public."refPayment" rp 
+    ON (
+        EXTRACT(YEAR FROM TO_DATE(rp."refPayFrom", 'YYYY-MM-DD')) = EXTRACT(YEAR FROM TO_DATE($1, 'YYYY'))
+        OR EXTRACT(YEAR FROM TO_DATE(rp."refPagExp", 'YYYY-MM-DD')) = EXTRACT(YEAR FROM TO_DATE($1, 'YYYY'))
+    )
+    AND (
+        EXTRACT(MONTH FROM TO_DATE(rp."refPayFrom", 'YYYY-MM-DD')) = m.month_num
+        OR EXTRACT(MONTH FROM TO_DATE(rp."refPagExp", 'YYYY-MM-DD')) = m.month_num
+        OR (
+            TO_DATE(rp."refPayFrom", 'YYYY-MM-DD') <= make_date(EXTRACT(YEAR FROM TO_DATE($1, 'YYYY'))::INT, m.month_num, 1)
+            AND TO_DATE(rp."refPagExp", 'YYYY-MM-DD') >= make_date(EXTRACT(YEAR FROM TO_DATE($1, 'YYYY'))::INT, m.month_num, 1)
+        )
+    )
+GROUP BY m.month_num
+ORDER BY m.month_num;`;
