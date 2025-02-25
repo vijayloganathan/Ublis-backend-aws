@@ -14,7 +14,7 @@ import { AttendanceRepository } from "./attendance/attendance_repository";
 import { UserPaymentRepository } from "./userPayment/userPayment";
 import { TrailVideoRepository } from "./trailVideo/trailvideo_repository";
 import { ClassInfoRepository } from "./classInfo/classInfo-repository";
-import { GoogleWorkSpaceRepository } from "./googleWorkSpace/googleWorkspace-repository";
+// import { GoogleWorkSpaceRepository } from "./googleWorkSpace/googleWorkspace-repository";
 
 export class Resolver {
   public userRepository: any;
@@ -904,18 +904,18 @@ export class UserPaymentResolver {
   }
 }
 
-export class GoogleWorkSpaceResolver {
-  public GoogleWorkSpaceRepository: any;
-  constructor() {
-    this.GoogleWorkSpaceRepository = new GoogleWorkSpaceRepository();
-  }
-  public async TestingV1(user_data: any, token_data: any): Promise<any> {
-    return await this.GoogleWorkSpaceRepository.TestingV1(
-      user_data,
-      token_data
-    );
-  }
-}
+// export class GoogleWorkSpaceResolver {
+//   public GoogleWorkSpaceRepository: any;
+//   constructor() {
+//     this.GoogleWorkSpaceRepository = new GoogleWorkSpaceRepository();
+//   }
+//   public async TestingV1(user_data: any, token_data: any): Promise<any> {
+//     return await this.GoogleWorkSpaceRepository.TestingV1(
+//       user_data,
+//       token_data
+//     );
+//   }
+// }
 
 export class ClassInfoResolver {
   public ClassInfoRepository: any;
