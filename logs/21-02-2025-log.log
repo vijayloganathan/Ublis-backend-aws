@@ -1,0 +1,900 @@
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T05:34:08.465Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T05:36:06.566Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T05:36:11.928Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:03.293Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:23.263Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:23.431Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:23.967Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:25.401Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T05:37:31.865Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T05:37:37.280Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T05:37:37.722Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T05:37:37.724Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T05:37:39.534Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T05:37:39.537Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:37:39.550Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:37:39.683Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:03.010Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:08.021Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:09.969Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:13.041Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:15.963Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:42:19.285Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:43:35.993Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:43:48.998Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:43:52.993Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:16.054Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:21.995Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:23.926Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:25.972Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:37.944Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:47:47.998Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:55:16.003Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:56:05.975Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:57:31.982Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:57:40.939Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:57:58.005Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:58:28.007Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:59:14.991Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:59:47.133Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:59:48.984Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:59:52.056Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T05:59:59.232Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:00:12.143Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:00:45.111Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:00:47.345Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:00:48.990Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:01:27.098Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:01:30.978Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:01:31.097Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T06:01:36.712Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T06:01:36.714Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T06:01:36.794Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T06:01:36.795Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T06:01:41.523Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T06:01:41.524Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:01:41.539Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:01:41.666Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:02:14.091Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:02:16.935Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:02:19.004Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:02:21.968Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:07:15.051Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:07:18.025Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:07:20.574Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:07:28.974Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:07:31.024Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:08:36.982Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:08:41.940Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:08:56.670Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T06:11:39.445Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:12:00.181Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:12:34.017Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:12:56.963Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:12:58.940Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:01.054Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:09.050Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:10.987Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:17.033Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:27.067Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:34.953Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:42.015Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:46.008Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:13:51.031Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:14:20.006Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:14:28.959Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:14:31.947Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:14:44.991Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:15:07.008Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:17:18.595Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:17:22.068Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:18:27.005Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T06:18:29.039Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:41:17.071Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:46.703Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:47.923Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:48.162Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:48.732Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:48.951Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:49.348Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:52.434Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:54.160Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:54.545Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T06:42:55.015Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T06:48:40.382Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T06:48:50.575Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:00.728Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:00.744Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:00.745Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:00.821Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:00.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:00.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:00.878Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:00.917Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:05.927Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:05.930Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:05.964Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:05.965Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T06:49:06.044Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T06:49:06.093Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T06:49:06.126Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:08.364Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:08.373Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:08.374Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:49:08.398Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:49:08.399Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:08.437Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:08.474Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T06:49:08.513Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:54.573Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:54.575Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:54.650Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:54.651Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T06:57:54.726Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T06:57:54.774Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:57.072Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:57.073Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:57.098Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:57.099Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T06:57:57.146Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T06:57:57.180Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:58.739Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:58.739Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T06:57:58.751Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T06:57:58.751Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T06:57:58.898Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T06:57:58.967Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T06:58:08.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T06:58:08.967Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:09.263Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:09.277Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:12.342Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:12.354Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:15.154Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:15.163Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T06:58:26.970Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T06:58:26.982Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:27.324Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:27.335Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:48.046Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:58:48.061Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:59:46.253Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T06:59:46.271Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:00:15.959Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:00:15.972Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:22.214Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:22.215Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:22.354Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:22.355Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T07:08:22.478Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T07:08:22.601Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T07:08:22.632Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:23.790Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:23.790Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userTypeLabel","timestamp":"2025-02-21T07:08:23.805Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:23.820Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:23.821Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userTypeLabel","timestamp":"2025-02-21T07:08:23.825Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/staff","timestamp":"2025-02-21T07:08:23.872Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/staff","timestamp":"2025-02-21T07:08:23.966Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:25.125Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:25.127Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:25.157Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:25.159Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:29.092Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:29.093Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentDetails","timestamp":"2025-02-21T07:08:29.098Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentDetails","timestamp":"2025-02-21T07:08:29.118Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:29.127Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:29.127Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:32.047Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:32.047Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:08:32.063Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:08:32.064Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:08:32.100Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:08:32.110Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:08:32.124Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:08:32.159Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:11:07.845Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:11:07.854Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:29.567Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:29.569Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:29.902Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:29.904Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/data","timestamp":"2025-02-21T07:15:30.035Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/data","timestamp":"2025-02-21T07:15:30.084Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/auditPage","timestamp":"2025-02-21T07:15:31.577Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/actionBtn","timestamp":"2025-02-21T07:15:31.586Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:37.686Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:37.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:15:37.701Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:15:37.728Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:37.738Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:37.739Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/session","timestamp":"2025-02-21T07:15:39.527Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/session","timestamp":"2025-02-21T07:15:39.542Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:43.615Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:43.616Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:15:43.642Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:15:43.644Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:15:43.677Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:15:43.690Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:15:43.700Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:15:43.717Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:15:46.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:15:46.699Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:15:47.031Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:15:47.044Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:16:19.353Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:16:19.355Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:16:19.667Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:16:19.668Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:16:19.726Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:16:19.791Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:16:22.833Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:16:22.845Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:23.078Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:23.085Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:16:31.037Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:16:31.038Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:16:31.066Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:16:31.067Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:16:31.093Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:16:31.103Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:16:31.112Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:16:31.206Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:16:34.319Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:16:34.327Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:34.725Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:34.738Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:16:57.662Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:16:57.669Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:58.169Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:16:58.178Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T07:26:14.809Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:26:16.964Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:26:16.966Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:26:16.991Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:26:16.993Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:26:17.022Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:26:17.077Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:26:17.107Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:26:17.140Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T07:27:33.051Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:27:36.649Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:27:36.663Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:27:36.664Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:27:36.741Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:27:36.908Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:27:36.909Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:27:36.982Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:27:37.094Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:07.949Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:07.951Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:08.286Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:08.287Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/data","timestamp":"2025-02-21T07:30:08.386Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/futureClients/data","timestamp":"2025-02-21T07:30:08.435Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:10.121Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:10.123Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:10.138Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:10.139Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:30:10.168Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:30:10.178Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:30:10.185Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:30:10.632Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:30:11.455Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:11.478Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:11.479Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:30:11.495Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:11.509Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:11.510Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:12.585Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:12.587Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:12.693Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:12.694Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:30:12.741Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:30:12.774Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:30:38.291Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:38.301Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:38.302Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/attendance/overView","timestamp":"2025-02-21T07:30:38.310Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:38.396Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:38.396Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:39.406Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:39.408Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:30:39.432Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:30:39.433Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:30:39.467Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:30:39.493Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:31:30.107Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:31:30.109Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:31:30.116Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:31:30.212Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:31:30.213Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:31:30.249Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:31:30.285Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:31:30.323Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:32:26.425Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:32:26.426Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:32:26.555Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:32:26.556Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:32:26.634Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:32:26.707Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:34:27.360Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:34:27.362Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:34:27.662Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:34:27.663Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:34:27.692Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:34:27.736Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T07:34:30.510Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T07:34:30.528Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T07:34:30.544Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T07:34:30.558Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T07:35:55.735Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:40:52.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:40:52.824Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:40:52.896Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:40:52.896Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:40:52.927Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T07:40:52.943Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:40:52.955Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T07:40:53.197Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:42:36.912Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:42:36.923Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:42:37.364Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:42:37.374Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:42:53.332Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:42:53.345Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:42:53.694Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:42:53.698Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:43:27.684Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:43:27.698Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:43:28.034Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:43:28.046Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T07:56:01.891Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:56:03.527Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:03.635Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:03.636Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:56:03.643Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:03.693Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:03.694Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:56:03.832Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T07:56:03.882Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:11.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:11.689Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:11.739Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:11.741Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:56:11.924Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:56:11.986Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:32.904Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:32.907Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:56:33.020Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:56:33.021Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:56:33.254Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:56:33.295Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:56:35.579Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:56:35.660Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:56:35.681Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:56:35.690Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:56:35.761Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T07:58:24.949Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T07:59:03.174Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:05.715Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:05.717Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:05.929Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:05.931Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:59:06.069Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T07:59:06.152Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:08.742Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:08.744Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:08.788Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:08.791Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:59:08.888Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:59:08.928Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T07:59:10.221Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:10.237Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:10.238Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T07:59:10.245Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:10.518Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:10.519Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:39.230Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:39.235Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T07:59:39.509Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T07:59:39.511Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:59:39.563Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T07:59:39.592Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T07:59:40.973Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:59:41.079Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T07:59:41.088Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:59:41.095Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T07:59:41.188Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:00:18.614Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:00:18.615Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:00:18.625Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:00:18.631Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:00:18.754Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:00:18.755Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:00:31.223Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:00:31.224Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:00:31.424Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:00:31.426Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T08:00:31.527Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T08:00:31.566Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:01:54.188Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:01:54.206Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:01:54.208Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:01:54.313Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:01:54.314Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:01:54.444Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:01:54.479Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:01:54.511Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:01:57.418Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:01:57.418Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:01:57.472Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:01:57.473Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:01:57.562Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:01:57.613Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:01.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:01.824Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T08:02:01.847Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T08:02:01.856Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:01.877Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:01.878Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:03.872Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:03.873Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:03.906Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:03.907Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T08:02:03.976Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T08:02:03.991Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T08:02:04.006Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T08:02:04.115Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:02:04.895Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:02:04.903Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:04.910Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:04.911Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:04.943Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:04.944Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:06.278Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:06.279Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:06.307Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:06.307Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T08:02:06.388Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T08:02:06.417Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:07.660Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:07.662Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:07.708Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:07.709Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T08:02:07.784Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T08:02:07.843Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:02:08.990Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:09.000Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:09.001Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:09.032Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:09.033Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:02:09.052Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:02:09.096Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:02:09.129Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:10.439Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:10.441Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:02:10.479Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:02:10.481Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:02:10.559Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:02:10.594Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T08:02:17.041Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T08:02:17.068Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T08:02:17.089Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T08:02:17.107Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:02:18.306Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T08:02:37.253Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:02:37.268Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T08:02:37.279Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:02:37.298Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T08:02:37.381Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/passToThreapist","timestamp":"2025-02-21T08:02:47.161Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:02:47.200Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T08:03:36.186Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T08:03:36.194Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T08:03:36.204Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T08:03:36.211Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T08:04:09.407Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:04:21.495Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T08:04:21.507Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:04:21.518Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:04:21.519Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:04:21.606Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:04:21.606Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T08:05:25.987Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:06:07.519Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:06:07.545Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:06:07.547Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:06:07.794Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:06:07.795Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:06:07.802Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:06:07.959Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T08:06:08.027Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:07:18.978Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:07:18.981Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T08:07:19.121Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T08:07:19.122Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T08:07:19.459Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T08:07:19.594Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T08:07:21.614Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T08:07:21.630Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:22.015Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:22.031Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:25.291Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:25.302Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:32.469Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T08:07:32.484Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T08:09:35.023Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T08:13:46.077Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6201/api/v1/googleWorkspace/testing","timestamp":"2025-02-21T08:14:20.234Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T08:17:17.855Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6201/api/v1/googleWorkspace/testing","timestamp":"2025-02-21T08:17:21.733Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T09:52:40.695Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T09:52:40.885Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T09:52:42.416Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:52:42.420Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:52:42.421Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T09:52:42.451Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:52:42.522Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:52:42.523Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T09:52:42.753Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T09:52:42.845Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:54:02.758Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:54:02.759Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:54:02.839Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:54:02.840Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T09:54:03.077Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T09:54:03.115Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T09:54:04.799Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T09:54:04.807Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:05.111Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:05.129Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:07.244Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:07.255Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:54:52.762Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:54:52.763Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:54:52.846Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:54:52.847Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T09:54:52.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T09:54:52.977Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T09:54:55.512Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:55.598Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T09:54:55.605Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:54:55.622Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T09:54:55.708Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:22.406Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:23.749Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:24.049Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:24.179Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:24.314Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:24.512Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:26.418Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:28.261Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:29.021Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:55:29.290Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T09:55:55.911Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.519Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.598Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.609Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.618Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.628Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.637Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.645Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.658Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.663Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.668Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.674Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.677Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.682Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.688Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:01.844Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:02.095Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:02.273Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T09:56:02.384Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:56:11.167Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:56:11.168Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T09:56:11.172Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/studentFees/Data","timestamp":"2025-02-21T09:56:11.179Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:56:11.211Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:56:11.212Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6201/api/v1/googleWorkspace/testing","timestamp":"2025-02-21T09:56:41.244Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T09:57:49.944Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:57:50.123Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:57:50.125Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:57:50.387Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:57:50.388Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:57:50.415Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:57:50.416Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:57:50.439Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:57:50.440Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T09:57:50.576Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T09:57:50.584Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T09:57:50.591Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T09:57:50.759Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6201/api/v1/googleWorkspace/testing","timestamp":"2025-02-21T09:57:55.551Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:22.334Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:22.335Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T09:59:22.341Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T09:59:22.347Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:22.442Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:22.443Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:32.820Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:32.821Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T09:59:32.829Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T09:59:32.836Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:32.994Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:32.994Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:44.001Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:44.001Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T09:59:44.079Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T09:59:44.080Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T09:59:44.115Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T09:59:44.126Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T09:59:44.135Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T09:59:44.212Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T09:59:47.673Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T09:59:47.693Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:59:47.981Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T09:59:47.990Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T10:00:09.026Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/ProfileData","timestamp":"2025-02-21T10:00:09.031Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:00:09.034Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:00:09.035Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:00:09.160Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:00:09.160Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:01:30.420Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:01:32.733Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:01:46.917Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:02:02.650Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:02:28.807Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:02:30.056Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:02:30.073Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:02:30.075Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:02:30.140Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:02:30.177Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:02:30.178Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:02:30.315Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:02:30.391Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:38.290Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:38.291Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:38.360Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:38.361Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:03:38.455Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:03:38.517Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:39.842Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:39.844Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:39.858Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:39.859Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:03:39.893Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:03:39.906Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:03:43.769Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:03:43.903Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:03:43.910Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:03:43.919Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:03:43.943Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:03:49.647Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:49.653Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:49.654Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:03:49.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:03:49.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:03:49.730Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:03:49.776Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:03:49.815Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:05:05.024Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:05:05.026Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:05:05.116Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:05:05.116Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:05:05.183Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:05:05.208Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:05:07.277Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:07.341Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:07.347Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:07.351Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:07.530Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:05:19.032Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:19.116Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:19.123Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:19.129Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:19.184Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:05:37.523Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:05:37.525Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:05:37.821Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:05:37.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:05:37.882Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:05:37.904Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:05:43.541Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:43.717Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:05:43.734Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:43.745Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:05:43.820Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:15.899Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:15.901Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:15.995Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:15.996Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:16.062Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:16.103Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:16.119Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:21.621Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:21.622Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:21.645Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:21.646Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T10:07:21.690Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T10:07:21.770Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:07:23.665Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:23.669Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:23.669Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:07:23.710Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:23.740Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:23.740Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:07:23.773Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:07:23.812Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:25.033Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:25.034Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:07:25.065Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:07:25.066Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:25.094Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:25.111Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userAuditList","timestamp":"2025-02-21T10:07:25.150Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userUpdateAuditList","timestamp":"2025-02-21T10:07:27.189Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userDataListApproval","timestamp":"2025-02-21T10:07:27.205Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:15:15.181Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:15:16.462Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:15:16.471Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:15:16.472Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:15:16.539Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:15:16.560Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:15:16.560Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:15:16.612Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:15:16.659Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:15:25.279Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:15:25.280Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:15:25.294Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:15:25.294Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T10:15:25.369Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/userManagementPage","timestamp":"2025-02-21T10:15:25.452Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:15:28.198Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:15:28.211Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:15:28.454Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:15:28.466Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:16:53.249Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:16:53.250Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:16:53.331Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:16:53.331Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:16:53.395Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:16:53.425Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:16:55.606Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:16:55.689Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:16:55.695Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:16:55.707Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:16:55.770Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T10:19:21.488Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:19:21.720Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:19:22.902Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:19:22.906Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:19:22.907Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:19:22.988Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:19:23.015Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:19:23.016Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:19:23.119Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:19:23.186Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:19:24.640Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:19:25.767Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:19:26.842Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:19:26.843Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:19:26.858Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:19:26.859Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:19:26.924Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/therapist/approvalData","timestamp":"2025-02-21T10:19:26.943Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:19:28.919Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:19:29.064Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:19:29.077Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:19:29.085Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:19:29.102Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T10:19:44.986Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T10:19:44.988Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T10:19:45.014Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2025-02-21T10:19:45.136Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validatetoken","timestamp":"2025-02-21T10:19:45.138Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/profile/passRegisterData","timestamp":"2025-02-21T10:19:45.148Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6201/api/v1/googleWorkspace/testing","timestamp":"2025-02-21T10:20:38.501Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:22:57.151Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:22:57.327Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:22:57.527Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:23:20.469Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:23:20.682Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:16.717Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:17.089Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:17.514Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:17.649Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:17.753Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:17.950Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:18.180Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:18.558Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:18.667Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:18.864Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:31:23.039Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:33:25.670Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:33:25.672Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:33:25.785Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:33:25.785Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:33:25.839Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:33:25.872Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:33:27.626Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:33:27.805Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:33:27.813Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:33:27.825Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:33:27.880Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T10:33:33.936Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T10:33:33.949Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/studentFeesDetails","timestamp":"2025-02-21T10:33:33.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/finance/userPaymentAuditPg","timestamp":"2025-02-21T10:33:33.964Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/studentApproval","timestamp":"2025-02-21T10:33:35.014Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:30.493Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:30.898Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:31.365Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:31.538Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:31.773Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:31.991Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:32.241Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:32.387Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:43:32.627Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:44:01.401Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:44:52.805Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:44:59.880Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:05.789Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:05.901Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:06.098Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:06.298Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:06.517Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:45:06.632Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:46:33.430Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:47:29.130Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:04.891Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:06.061Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:06.435Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:06.533Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:06.639Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:06.856Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:07.177Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:07.812Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:08.055Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:48:08.291Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2025-02-21T10:49:27.867Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:54:10.674Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/users/login","timestamp":"2025-02-21T10:54:27.587Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:54:28.734Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:54:28.738Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:54:28.739Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:54:28.783Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:54:28.801Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:54:28.801Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:54:28.867Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/staff/dashBoard","timestamp":"2025-02-21T10:54:28.909Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:56:46.664Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:56:46.665Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T10:56:46.742Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T10:56:46.743Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T10:56:46.765Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T10:56:46.778Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/overView","timestamp":"2025-02-21T10:56:46.784Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/classInfo/currentStudentData","timestamp":"2025-02-21T10:56:46.859Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:59:13.996Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:59:14.004Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:14.341Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:14.354Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/director/userData","timestamp":"2025-02-21T10:59:55.042Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/settings/Section/branch","timestamp":"2025-02-21T10:59:55.049Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:55.545Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:55.560Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:56.782Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T10:59:56.798Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T11:00:06.190Z"}
+{"level":"info","message":"GET URL REQ line 1133=> http://192.168.0.102:6201/api/v1/user/profileData","timestamp":"2025-02-21T11:00:06.203Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T11:01:04.809Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T11:01:04.810Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2025-02-21T11:01:04.893Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.0.102:6201/api/v1/validateTokenData","timestamp":"2025-02-21T11:01:04.894Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2025-02-21T12:40:08.440Z"}
