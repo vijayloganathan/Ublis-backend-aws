@@ -61,6 +61,7 @@ const init = async () => {
     logger.info("server running --- from server.ts", process.env.PORT);
   } catch (error) {
     logger.error("Server not running...", error);
+    console.log(' -> Line Number ----------------------------------- 64', );
   }
 };
 
