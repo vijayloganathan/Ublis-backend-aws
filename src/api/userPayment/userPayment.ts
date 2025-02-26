@@ -184,9 +184,8 @@ export class UserPaymentRepository {
             currentDate.setMonth(currentDate.getMonth() + refOfferMonths);
             const newYear = currentDate.getFullYear();
             const newMonth = currentDate.getMonth() + 1;
-            updateData.refExDate = `${newYear}-${
-              newMonth < 10 ? "0" + newMonth : newMonth
-            }`;
+            updateData.refExDate = `${newYear}-${newMonth < 10 ? "0" + newMonth : newMonth
+              }`;
             updateData.refOfferValue = couponDataResult[0].refOffer;
             break;
 
@@ -208,21 +207,18 @@ export class UserPaymentRepository {
       const refEndDate = new Date(updateData.refEndDate);
       let newYear = refEndDate.getFullYear();
       let newMonth = refEndDate.getMonth() + 1;
-      updateData.refEndDate = `${newYear}-${
-        newMonth < 10 ? "0" + newMonth : newMonth
-      }`;
+      updateData.refEndDate = `${newYear}-${newMonth < 10 ? "0" + newMonth : newMonth
+        }`;
       const refStartDate = new Date(updateData.refStartDate);
       newYear = refStartDate.getFullYear();
       newMonth = refStartDate.getMonth() + 1;
-      updateData.refStartDate = `${newYear}-${
-        newMonth < 10 ? "0" + newMonth : newMonth
-      }`;
+      updateData.refStartDate = `${newYear}-${newMonth < 10 ? "0" + newMonth : newMonth
+        }`;
       const refExDate = new Date(updateData.refExDate);
       newYear = refExDate.getFullYear();
       newMonth = refExDate.getMonth() + 1;
-      updateData.refExDate = `${newYear}-${
-        newMonth < 10 ? "0" + newMonth : newMonth
-      }`;
+      updateData.refExDate = `${newYear}-${newMonth < 10 ? "0" + newMonth : newMonth
+        }`;
 
       return encrypt(
         {
